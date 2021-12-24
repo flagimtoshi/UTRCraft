@@ -3,7 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="33" name="datafiles">
+  <datafiles number="34" name="datafiles">
     <datafile>
       <name>logo.png</name>
       <exists>-1</exists>
@@ -38,7 +38,7 @@
       </ConfigOptions>
       <filename>ProcessBlacklist.dll</filename>
     </datafile>
-    <datafiles number="33" name="lang">
+    <datafiles number="34" name="lang">
       <datafile>
         <name>lang.ini</name>
         <exists>-1</exists>
@@ -57,7 +57,7 @@
         <filename>lang.ini</filename>
       </datafile>
     </datafiles>
-    <datafiles number="33" name="structures">
+    <datafiles number="34" name="structures">
       <datafile>
         <name>test.struct</name>
         <exists>-1</exists>
@@ -75,8 +75,8 @@
         </ConfigOptions>
         <filename>test.struct</filename>
       </datafile>
-      <datafiles number="33" name="tree">
-        <datafiles number="33" name="regular">
+      <datafiles number="34" name="tree">
+        <datafiles number="34" name="regular">
           <datafile>
             <name>gianttree.struct</name>
             <exists>-1</exists>
@@ -130,8 +130,8 @@
           </datafile>
         </datafiles>
       </datafiles>
-      <datafiles number="33" name="Space">
-        <datafiles number="33" name="random">
+      <datafiles number="34" name="Space">
+        <datafiles number="34" name="random">
           <datafile>
             <name>Meteor1.struct</name>
             <exists>-1</exists>
@@ -236,8 +236,8 @@
           <filename>MeteorCore.struct</filename>
         </datafile>
       </datafiles>
-      <datafiles number="33" name="granrock">
-        <datafiles number="33" name="village">
+      <datafiles number="34" name="granrock">
+        <datafiles number="34" name="village">
           <datafile>
             <name>lamp.struct</name>
             <exists>-1</exists>
@@ -258,7 +258,7 @@
         </datafiles>
       </datafiles>
     </datafiles>
-    <datafiles number="33" name="voicelines">
+    <datafiles number="34" name="voicelines">
       <datafile>
         <name>combat.ogg</name>
         <exists>-1</exists>
@@ -345,7 +345,7 @@
         <filename>sprint.ogg</filename>
       </datafile>
     </datafiles>
-    <datafiles number="33" name="Discord">
+    <datafiles number="34" name="Discord">
       <datafile>
         <name>discord_rich_presence.dll</name>
         <exists>0</exists>
@@ -415,8 +415,8 @@
       </ConfigOptions>
       <filename>splashes.txt</filename>
     </datafile>
-    <datafiles number="33" name="sounds">
-      <datafiles number="33" name="door">
+    <datafiles number="34" name="sounds">
+      <datafiles number="34" name="door">
         <datafile>
           <name>door_close.ogg</name>
           <exists>-1</exists>
