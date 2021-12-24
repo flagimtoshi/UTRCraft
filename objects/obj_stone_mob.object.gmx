@@ -52,6 +52,7 @@ dialogbox=obj_talk_claudia;
 
 outfit=random(sprite_get_number(spr_granrock_hat))//skin
 rank=random(3);
+panic=0;
 
 item="";//"Pistol"
 canshoot=0
@@ -432,7 +433,18 @@ else
 gravity_direction = 270
 gravity = 0
 }
+if panic=0{
 ai_human();
+}else{
+if ! place_meeting(x-4,y+4,obj_breaking){
+br=instance_create(x-4,y+4,obj_breaking)
+br.pb=false  //no player breaking
+br.slec=true
+br.image_speed=0.05
+panic=0
+ai=0;
+}
+}
 if x=xprevious{
 move=0
 }
@@ -462,8 +474,12 @@ move=1
             <kind>1</kind>
             <string>///HEALTH CHECK
 
-if hp !=20{
-hp=real(hp)+0.1
+//if hp !=20{
+//hp=real(hp)+0.1
+//}
+
+if hp&lt;10{
+panic=1;
 }
 
 if hp&lt;1{

@@ -43,6 +43,7 @@ dirofv=1;
 iae=0; //This is retarded
 hand=instance_create(0,0,obj_entity)
 hand.visible=0
+ai=1;
 
 //hand.target=obj_player
 //hand.parent=id

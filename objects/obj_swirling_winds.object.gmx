@@ -41,6 +41,7 @@ sped=0.9
 dirofv=1;
 image_xscale=2
 image_yscale=3
+ai=1;
 
 yoffset=0
 

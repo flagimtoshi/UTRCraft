@@ -34,7 +34,7 @@ pTAILS=random(sprite_get_number(spr_hats))
 shield=0
 //datarget = obj_player
 datarget = instance_create(x,y,obj_random_pos);
-
+ai=1;
 npcname = choose("BIg Unga CUCUMBA", "Der Dumme PEti", "bitte tötemich", "momslayere"+string(random(1000)))
 randomize();
 sped=1

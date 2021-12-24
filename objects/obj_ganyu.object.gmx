@@ -49,6 +49,7 @@ image_xsize=0.5
 mx=datarget.x
 my=datarget.y
 dialogbox=obj_talk_claudia;
+ai=1;
 
 outfit=2//skin
 

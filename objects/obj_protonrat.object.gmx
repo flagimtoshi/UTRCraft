@@ -45,6 +45,7 @@ iae=0; //This is retarded
 hand1=instance_create(x+10,y+10,obj_protorat_hand)
 hand2=instance_create(x+12,y+20,obj_protorat_hand_mirror)
 iiii=instance_create(x,y,obj_bossbar);
+ai=1;
 //hand.target=obj_player
 //hand.parent=id
 </string>

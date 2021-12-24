@@ -34,6 +34,7 @@ shield=0;
 image_speed=0.4
 datarget = obj_player
 dirofv=0
+ai=1;
 </string>
           </argument>
         </arguments>

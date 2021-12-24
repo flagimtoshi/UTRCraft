@@ -1084,6 +1084,7 @@
       <object>objects\obj_logo_intro</object>
       <object>objects\obj_frank</object>
       <object>objects\obj_mailbox_controller</object>
+      <object>objects\obj_display_manager</object>
     </objects>
     <object>objects\obj_player</object>
     <object>objects\obj_hand</object>
