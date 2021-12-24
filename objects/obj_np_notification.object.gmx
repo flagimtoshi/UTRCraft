@@ -35,8 +35,8 @@ itar = dist;
 iitar = 0;
 margin=240;
 framequart=15;
-iconsize=-16;
-buffer=0;
+iconsize=-(sprite_get_width(icon)/2);
+buffer=-24;
 
 xrel=x-view_xview;
 yrel=y-view_yview;
@@ -272,18 +272,18 @@ draw_set_font(fnt_roboto);
 if image_xscale&lt;0{
 i=lerp(i,itar+8,0.1);
 ii=lerp(ii,iitar+8,0.1);
-draw_sprite_ext(sprite_index,image_index,xviewpos+i-8,yviewpos,image_xscale,image_yscale,0,make_colour_rgb(118,185,0),1);
+draw_sprite_ext(sprite_index,image_index,xviewpos+i-8,yviewpos,image_xscale,image_yscale,0,make_colour_rgb(0,201,249),1);
 }else{
 i=lerp(i,itar-8,0.1);
 ii=lerp(ii,iitar-8,0.1);
-draw_sprite_ext(sprite_index,image_index,xviewpos+i+8,yviewpos,image_xscale,image_yscale,0,make_colour_rgb(118,185,0),1);
+draw_sprite_ext(sprite_index,image_index,xviewpos+i+8,yviewpos,image_xscale,image_yscale,0,make_colour_rgb(0,201,249),1);
 }
 draw_sprite_ext(sprite_index,image_index,xviewpos+ii,yviewpos,image_xscale,image_yscale,0,c_black,1);
 
 if image_xscale&lt;0{
-draw_sprite(icon,0,xviewpos+(sprite_width/3.66)+ii,yviewpos)
+draw_sprite(icon,0,xviewpos+(sprite_width/3.0)+ii,yviewpos)
 }else{
-draw_sprite(icon,0,xviewpos-(sprite_width/3.66)+ii,yviewpos)
+draw_sprite(icon,0,xviewpos-(sprite_width/3.0)+ii,yviewpos)
 }
 draw_set_colour(c_white);
 draw_set_valign(fa_middle)

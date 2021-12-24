@@ -27,6 +27,11 @@
             <kind>1</kind>
             <string>width=500;
 height=500;
+if ! file_exists("first-startup"){
+   file=file_text_open_append("first-startup");
+   file_text_write_string(file,"The Game has been run before!");
+   file_text_close(file);
+}
 instance_destroy();
 </string>
           </argument>

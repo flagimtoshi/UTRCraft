@@ -61,7 +61,7 @@
     <instance objName="obj_windows_fix" x="192" y="64" name="inst_ECFB6493" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fade_in_intro" x="0" y="128" name="inst_0DDD0610" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_frank" x="128" y="128" name="inst_FC4766D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_np_notification" x="2112" y="320" name="inst_C8FDBE1B" locked="0" code="text=&quot;Oh god no&quot;&#xA;" scaleX="-12" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="obj_np_notification" x="2112" y="320" name="inst_C8FDBE1B" locked="0" code="text=get_string_ini(&quot;Infos&quot;,&quot;Info_Beta&quot;);&#xA;" scaleX="-12" scaleY="4" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
