@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Text="Shaders"
+            <string>Text=get_string_ini("Buttons","Button_Option_Shaders");
 </string>
           </argument>
         </arguments>

@@ -116,8 +116,8 @@ spr_skin_new=sprite_replace(spr_player,Skin,0,0,0,4,10)
             <kind>1</kind>
             <string>
 
-if file!="" {
-draw_sprite_ext(spr_noti,ntype,clamp(x,0,10000),y,4,4,0,c_white,1)
+if (file!="") and (string_count("read",file)=0) {
+draw_sprite_ext(spr_noti,ntype,clamp(x,0,10000),y,4+(sin(current_time/180)/1.5),4+(sin(current_time/180)/1.5),0,c_white,1)
 }
 </string>
           </argument>

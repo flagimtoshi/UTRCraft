@@ -54,9 +54,9 @@ for(i=-88;i<room_width+88;i+=8){ // THIS WILL KEEP GENERATE THE WORLD UNTIL IT R
     blockmid=obj_sand;
     }
     instance_create(i,zey,blocktop) // THIS WILL CREATE THE TOP LAYER //  
-    for(waterh=round_to(waterlevel, 8);waterh<zey;waterh+=8){
-    instance_create(i,waterh,obj_water) 
-    }
+    //for(waterh=round_to(waterlevel, 8);waterh<zey;waterh+=8){
+    //instance_create(i,waterh,obj_water) 
+    //}
     io=choose(0, 1, 2, 3)
             // MIDDLE // 
     for(m=rn-((p-1)*8);m<rn;m+=8){ // THIS WILL START GENERATE THE BOTTOM LAYER //

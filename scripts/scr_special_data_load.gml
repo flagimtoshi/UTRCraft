@@ -40,4 +40,16 @@ ioo.child=real(ini_read_string("Map","child"+string(i),0))
 ioo.parent=real(ini_read_string("Map","parent"+string(i),0))
 ioo.source=real(ini_read_string("Map","source"+string(i),1))
 break;
+case obj_other_player:
+ioo.Username=ini_read_string("Map","Username"+string(i),"")
+ioo.weapon_indexx=ini_write_string("Map","Weapon"+string(i),obj_sword_lvl0)
+ioo.pant=ini_write_real("Map","Pant"+string(i),0)
+ioo.head=ini_write_real("Map","Head"+string(i),0)
+ioo.tail=ini_write_real("Map","Taio"+string(i),0)
+ioo.body=ini_write_real("Map","Body"+string(i),0)
+ioo.pcolour=ini_write_real("Map","PColour"+string(i),c_blue)
+ioo.iae=ini_write_real("Map","iae"+string(i),0)
+ioo.hjh=ini_write_real("Map","hjh"+string(i),0)
+ioo.hkh=ini_write_real("Map","hkh"+string(i),0)
+break;
 }

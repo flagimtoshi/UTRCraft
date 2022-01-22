@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>999</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_time_object</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,10 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>timespeed=60;
 time=0;
 rot=360;
-timespeed=60;
 nightvector=0;
 </string>
           </argument>
@@ -225,7 +224,7 @@ draw_rectangle_colour(view_xview,view_yview,view_xview+view_wview,view_yview+vie
 prim,prim,seco,seco,0);
 
 
-draw_sprite_ext(spr_stars,0,view_xview+view_wview/2,(view_yview+view_hview/2)+64,0.5,0.5,rot,image_blend, nightvector*(1-image_alpha) )//clamp((1.12*(time/360)),0,1) )
+draw_sprite_ext(spr_stars,0,view_xview+view_wview/2,(view_yview+view_hview/2)+64,0.5,0.5,rot,image_blend, nightvector*image_alpha )//clamp((1.12*(time/360)),0,1) )
 
 var rotatedX0 = (view_xview+view_wview/2) + lengthdir_x(100, -rot+90);
 var rotatedY0 = (view_yview+view_hview/2)+64 + lengthdir_y(100, -rot+90);

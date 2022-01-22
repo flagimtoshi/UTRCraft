@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if Worldtype=1{
+            <string>if Worldtype=2{
 Worldtype=0
 }else{
 Worldtype+=1

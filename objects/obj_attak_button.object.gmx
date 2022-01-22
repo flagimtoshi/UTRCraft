@@ -31,6 +31,8 @@ image_speed=0;
 attaktype="meele"
 //inv[index,0]=0;
 //inv[index,1]=0;
+image_xscale=2
+image_yscale=2
 er=0
 </string>
           </argument>
@@ -54,7 +56,7 @@ er=0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = view_xview+((16*scale_mult)*obj_inventory.slotnumber+1)
+            <string>x = view_xview+((16*scale_mult)*(obj_inventory.slotnumber+1))
 y = view_yview
 
 image_xscale=scale_mult

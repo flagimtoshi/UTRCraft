@@ -80,13 +80,13 @@ alarm[0]=30*room_speed; // To continue pinging
             <kind>1</kind>
             <string>///Button action
 //gj_init("377149", "8722727a009f0ecd0fca3a4cff51cb59");
-clicked=1
+
 if ! instance_exists(obj_gamejolt_api){
 o=instance_create(0,0,obj_gamejolt_api);
 userDialog="";
     userDialogg="";
     userDialog = get_string_async("Username:","");
-    
+    clicked=1
 }else{
 instance_create((view_wview/2)*3,view_hview/2,obj_popout_logout_GJ)
 }

@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Text="Debug Messages"
+            <string>Text=get_string_ini("Buttons","Button_Option_DebugMessages");
 </string>
           </argument>
         </arguments>

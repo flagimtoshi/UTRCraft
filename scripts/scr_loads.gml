@@ -56,7 +56,15 @@ ioo.index=ini_read_real("Map","wallindB"+string(i),0)
 i-=1
 }
 
-inv[0,0] = ini_read_real("In1","slot0",0);
+var poijt;
+poijt=0;
+repeat(obj_inventory.slotnumber+1){
+obj_inventory.itemid[poijt] = ini_read_real("Inventory","slotitem"+string(poijt),0);
+obj_inventory.counti[poijt] = ini_read_real("Inventory","slotamount"+string(poijt),0);
+poijt+=1;
+}
+
+/*inv[0,0] = ini_read_real("In1","slot0",0);
 inv[0,1] = ini_read_real("In2","slot0",0);
 //globalvar inv00;inv00 = ini_read_real("In1","slot0",0);
 //globalvar inv01;inv01 = ini_read_real("In2","slot0",0);
@@ -101,7 +109,7 @@ inv[7,1] = ini_read_real("In2","slot7",0);
 //globalvar inv80;inv80 = ini_read_real("In1","slot8",0);
 //globalvar inv81;inv81 = ini_read_real("In2","slot8",0);
 inv[8,0] = ini_read_real("In1","slot8",0);
-inv[8,1] = ini_read_real("In2","slot8",0);
+inv[8,1] = ini_read_real("In2","slot8",0);*/
 
 
 
@@ -147,12 +155,12 @@ MinecraftSkin=ini_read_real("Opt","MinecraftSkin",0);
 DebugMSG=ini_read_real("Opt","DebugMessages",0);
 NameShow=ini_read_real("Opt","NameShow",0);
 ClassicUI=ini_read_real("Opt","ClassicTitlescreen",0);
-connectBlocks=ini_read_real("Opt","ConnectBlocks",0);
+connectBlocks=ini_read_real("Opt","ConnectBlocks",1);
 GJChat=ini_read_real("Opt","GameJoltChat",1);
 scale_mult=ini_read_real("Opt","Scale",0.75);
 var key1, key2;
-key1=base64_decode(ini_read_string("Opt","key1DONOTCHANGE","0"));
-key2=base64_decode(ini_read_string("Opt","key2DONOTCHANGE","0"));
+key1=base64_decode(ini_read_string("Opt","key1DONOTCHANGE","OTU="));
+key2=base64_decode(ini_read_string("Opt","key2DONOTCHANGE","NzA="));
 enkey1=((real(key1)-9)/5)
 enkey2=((real(key2)-10)/7)
 if (enkey1==enkey2){
@@ -204,6 +212,11 @@ instance_destroy(self,false);
 }
 with (obj_light) {
 instance_destroy(self,false);
+}
+with (obj_other_player) {
+if ! self.Username=gj_user_username(){
+instance_destroy(self,false);
+}
 }
 var file;
 if argument0=0{
@@ -310,9 +323,11 @@ Skyy=ini_read_string("World","Sky","day")
 if Skyy="day"{
 instance_create(0,0,obj_skybox_dtn)
 obj_skybox_dtn.time=ini_read_real("World","Time",0)
+obj_skybox_dtn.rot=ini_read_real("World","TimeRot",360)
 }else{
 instance_create(0,0,obj_skybox_ntd)
 obj_skybox_ntd.time=ini_read_real("World","Time",0)
+obj_skybox_ntd.rot=ini_read_real("World","TimeRot",360)
 }
 load=ini_read_real("Check","check",0)
 ini_close();

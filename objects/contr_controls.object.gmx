@@ -35,6 +35,61 @@ global.interact=ord("E");
 global.sprint=vk_shift;
 global.crouch=vk_control;
 
+//gamepad detection
+gamepad=0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if gamepad_is_connected(0){
+if gamepad = 0 {
+gamepad=1
+notii=instance_create(view_xview-(12*16),view_yview+128,obj_np_notification)
+with(notii){
+            text="Gamepad connected!"
+            image_xscale=12;
+            image_yscale=4;
+            dist=32*12;
+            itar=dist
+            xrel=x-view_xview;
+            yrel=y-view_yview;
+            icon=icon_gamepad;
+}
+}
+}else{
+if gamepad = 1 {
+gamepad=0
+notii=instance_create(view_xview-(12*16),view_yview+128,obj_np_notification)
+with(notii){
+            text="Gamepad disconnected!"
+            image_xscale=12;
+            image_yscale=4;
+            dist=32*12;
+            itar=dist
+            xrel=x-view_xview;
+            yrel=y-view_yview;
+            icon=icon_gamepad;
+}
+}
+}
 </string>
           </argument>
         </arguments>

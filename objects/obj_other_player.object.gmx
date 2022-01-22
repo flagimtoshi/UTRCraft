@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_map_saves</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -26,14 +26,14 @@
           <argument>
             <kind>1</kind>
             <string>self.Username="PlayerTest";
-xx=gj_datastore_get_global("xPos"+self.Username);
-yy=gj_datastore_get_global("yPos"+self.Username);
+//xx=gj_datastore_get_global("xPos"+self.Username);
+//yy=gj_datastore_get_global("yPos"+self.Username);
 px=0;
 py=0;
 //scr_save_player_mp();
-pd=gj_datastore_get_global("PlDa"+self.Username);
+//pd=gj_datastore_get_global("PlDa"+self.Username);
 
-handangle=0;
+handangle=point_mouse();
 handanglee=0;
 dirofv=1;
 
@@ -95,7 +95,7 @@ hkh=0;
             <kind>1</kind>
             <string>//xx=gj_datastore_get_global("xPos"+self.Username)
 //yy=gj_datastore_get_global("yPos"+self.Username)
-pd=gj_datastore_get_global("PlDa"+self.Username)
+//pd=gj_datastore_get_global("PlDa"+self.Username)
 </string>
           </argument>
         </arguments>
@@ -142,10 +142,13 @@ pd=gj_datastore_get_global("PlDa"+self.Username)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x=mean(x,px);
-y=mean(y,py);
-handangle=mean(handanglee,handangle);
+            <string>if self.Username=gj_user_username(){
+x=obj_player.x//mean(x,obj_player.x);
+y=obj_player.y//mean(y,obj_player.y);
+handangle=obj_hand.image_angle;
+}
 if (self.Username="B_Hilger"){tail=3;}
+
 </string>
           </argument>
         </arguments>
@@ -168,7 +171,7 @@ if (self.Username="B_Hilger"){tail=3;}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>/*
     if ds_map_find_value(async_load, "id") == pd
     {
     if ds_map_find_value(async_load, "status") == 0

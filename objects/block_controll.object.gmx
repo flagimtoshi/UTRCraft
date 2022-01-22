@@ -149,6 +149,7 @@ BlockSave[91]=obj_polished_galena
 BlockSave[92]=obj_stone_mob
 BlockSave[93]=obj_swirling_winds
 BlockSave[777]=obj_error
+BlockSave[778]=obj_other_player
 //BlockSave[10000]=biome_snow
 
 </string>

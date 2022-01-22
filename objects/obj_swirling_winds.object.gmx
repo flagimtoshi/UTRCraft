@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hp=20
+            <string>maxhp=20;
+hp=maxhp;
 
 pHATS=random(12)
 pJACKETS=random(5)
@@ -42,6 +43,7 @@ dirofv=1;
 image_xscale=2
 image_yscale=3
 ai=1;
+iiii=instance_create(x,y,obj_bossbar);
 
 yoffset=0
 
@@ -436,15 +438,24 @@ move=1
             <kind>1</kind>
             <string>///HEALTH CHECK
 
-if hp !=20{
-hp=real(hp)+0.1
-}
+////if hp !=20{
+//hp=real(hp)+0.1
+//}
 
 if hp&lt;1{
 if instance_exists(hand){
 instance_destroy(hand)
 }
 instance_destroy();
+if instance_exists(iiii){
+instance_destroy(iiii);
+}
+}
+
+if instance_exists(iiii){
+iiii.bosshp
+=
+hp/maxhp;
 }
 </string>
           </argument>

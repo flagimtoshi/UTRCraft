@@ -50,7 +50,7 @@
           <argument>
             <kind>1</kind>
             <string>slec=1;
-pb=0;
+pb=1;
 </string>
           </argument>
         </arguments>
@@ -76,8 +76,11 @@ pb=0;
             <string>if pb=1{
 if ( sel = false ) or ( slec = false )
 {
-instance_destroy()
+instance_destroy();
 }
+}
+if ! (place_meeting(x,y,obj_solid) or place_meeting(x,y,obj_non_solid) or place_meeting(x,y,obj_baseblock)){
+instance_destroy();
 }
 </string>
           </argument>

@@ -40,6 +40,9 @@ buffer=-24;
 
 xrel=x-view_xview;
 yrel=y-view_yview;
+
+xviewpos=view_xview+xrel // setup var to prevent breaking
+yviewpos=view_yview+yrel
 </string>
           </argument>
         </arguments>
@@ -250,7 +253,7 @@ yviewpos=view_yview+yrel
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>

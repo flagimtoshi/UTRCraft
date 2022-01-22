@@ -53,8 +53,14 @@ i-=1
 }
 //wall objs
 ini_write_real("Extras","Walls",(wallinst))
-
-ini_write_real("In1","slot0",inv[0,0])
+var poijt;
+poijt=0;
+repeat(obj_inventory.slotnumber+1){
+ini_write_real("Inventory","slotitem"+string(poijt),obj_inventory.itemid[poijt])
+ini_write_real("Inventory","slotamount"+string(poijt),obj_inventory.counti[poijt])
+poijt+=1;
+}
+/*ini_write_real("In1","slot0",inv[0,0])
 ini_write_real("In2","slot0",inv[0,1])
 
 ini_write_real("In1","slot1",inv[1,0])
@@ -79,7 +85,7 @@ ini_write_real("In1","slot7",inv[7,0])
 ini_write_real("In2","slot7",inv[7,1])
 
 ini_write_real("In1","slot8",inv[8,0])
-ini_write_real("In2","slot8",inv[8,1])
+ini_write_real("In2","slot8",inv[8,1])*/
 
 // Player stats
 ini_write_real("Player","Health",obj_player.HP)
@@ -214,6 +220,7 @@ ini_write_real("Map","wallprp"+string(i),gggggg)
 //                                        switch block saves NBT
 scr_special_data_save(i,inst);
 
+
 /*if (obj_item=object_get_parent(inst.object_index)){
 ini_write_real("Map","wallindA"+string(i),inst.item_index)
 ini_write_real("Map","wallindB"+string(i),inst.index)
@@ -262,9 +269,11 @@ ini_write_real("Player","Cold"+Username,obj_player.cold)*/
 
 if instance_exists(obj_skybox_dtn){
 ini_write_real("World","Time",obj_skybox_dtn.time)
+ini_write_real("World","TimeRot",obj_skybox_dtn.rot)
 ini_write_string("World","Sky","day")
 }else{
 ini_write_real("World","Time",obj_skybox_ntd.time)
+ini_write_real("World","TimeRot",obj_skybox_ntd.rot)
 ini_write_string("World","Sky","night")
 }
 ini_close();

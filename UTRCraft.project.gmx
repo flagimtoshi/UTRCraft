@@ -701,8 +701,12 @@
         <sprite>sprites\spr_fav_gj</sprite>
         <sprite>sprites\spr_discord</sprite>
         <sprite>sprites\spr_mail</sprite>
+        <sprite>sprites\spr_kofi</sprite>
         <sprite>sprites\spr_noti</sprite>
         <sprite>sprites\spr_web_arrow</sprite>
+      </sprites>
+      <sprites name="mailbox">
+        <sprite>sprites\spr_mail_bg</sprite>
       </sprites>
     </sprites>
     <sprites name="visualcues">
@@ -893,6 +897,9 @@
     <sprite>sprites\icon_camera</sprite>
     <sprite>sprites\icon_scheduler</sprite>
     <sprite>sprites\icon_options</sprite>
+    <sprite>sprites\icon_gamepad</sprite>
+    <sprite>sprites\icon_trashbin</sprite>
+    <sprite>sprites\icon_open</sprite>
     <sprite>sprites\sprite301</sprite>
     <sprite>sprites\spr_test_lite</sprite>
     <sprites name="NP">
@@ -941,6 +948,7 @@
     <script>scripts\scr_tile_ores.gml</script>
     <script>scripts\generate.gml</script>
     <script>scripts\gen_flat.gml</script>
+    <script>scripts\gen_empty.gml</script>
     <script>scripts\generate_stone.gml</script>
     <script>scripts\generate_d2.gml</script>
     <scripts name="WorldSaves">
@@ -1050,7 +1058,9 @@
     </scripts>
     <script>scripts\get_mouse_pos.gml</script>
     <script>scripts\round_to.gml</script>
+    <script>scripts\check_mplay.gml</script>
     <script>scripts\scr_sine.gml</script>
+    <script>scripts\create_playerlist.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
@@ -1405,6 +1415,7 @@
         </objects>
         <object>objects\Button_Creds</object>
         <object>objects\Button_QuitGame</object>
+        <object>objects\Button_TestAds</object>
         <object>objects\Button_debug</object>
         <objects name="WorldSelectionscreen">
           <object>objects\Button_PlayWorld</object>
@@ -1437,6 +1448,7 @@
           <object>objects\Button_NameShow_toggle</object>
           <object>objects\Button_classicStart_toggle</object>
           <object>objects\Button_GJChat_toggle</object>
+          <object>objects\Button_connectBlocks_toggle</object>
           <object>objects\obj_all_opts</object>
         </objects>
         <objects name="Title">
@@ -1461,12 +1473,16 @@
         <object>objects\Slider_scale_mult</object>
       </objects>
       <object>objects\obj_popout_msg</object>
+      <objects name="mailbox">
+        <object>objects\obj_news_popper</object>
+      </objects>
     </objects>
     <objects name="engine">
       <object>objects\obj_solid</object>
       <object>objects\obj_fake_solid</object>
       <object>objects\obj_non_solid</object>
       <object>objects\obj_falling_solid</object>
+      <object>objects\obj_flying_solid</object>
       <object>objects\obj_baseblock</object>
       <object>objects\obj_selection</object>
       <object>objects\obj_controller_cursor</object>
@@ -1514,12 +1530,13 @@
       <object>objects\obj_structur_block</object>
       <object>objects\obj_tail1</object>
       <objects name="sky">
-        <object>objects\obj_skybox_ntd</object>
         <object>objects\obj_skybox_dtn</object>
+        <object>objects\obj_skybox_ntd</object>
         <object>objects\obj_cave_bg</object>
         <object>objects\obj_woods_bg</object>
         <object>objects\obj_stars</object>
         <object>objects\obj_night_sky</object>
+        <object>objects\obj_time_object</object>
       </objects>
       <object>objects\obj_shader</object>
       <object>objects\obj_power</object>

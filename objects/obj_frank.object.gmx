@@ -31,6 +31,23 @@ if ! file_exists("first-startup"){
    file=file_text_open_append("first-startup");
    file_text_write_string(file,"The Game has been run before!");
    file_text_close(file);
+   file=file_text_open_append("Mailbox\First Play\text.txt");
+   file_text_write_string(file,
+"Dear Player,
+
+Thank you for Downloading UTRCraft's Beta!
+
+If you come across bugs or glitches,
+
+be sure to report them to me.
+
+I am currently working on a update,
+
+so this would be handy!
+
+Thank you! &lt;3"
+   );
+   file_text_close(file);
 }
 instance_destroy();
 </string>

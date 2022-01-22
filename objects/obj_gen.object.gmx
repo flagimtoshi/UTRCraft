@@ -34,6 +34,10 @@ break;
 case 1:
 gen_flat(10,2,-1);
 break;
+
+case 2:
+gen_empty();
+break;
 }
 </string>
           </argument>

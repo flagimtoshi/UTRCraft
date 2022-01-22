@@ -140,6 +140,41 @@ height=image_yscale*32;
         </arguments>
       </action>
     </event>
+    <event eventtype="6" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if ! gj_user=" "{
+
+    updatechat=1
+    ChatMessage=check_string_cursewords_english(Text+string("#&lt; "+gj_user+" "+ string(current_hour) + ":" + string(current_minute) + " &gt; "+get_string("Message:","")))
+    if 0=string_count("./clear",ChatMessage){
+       gj_datastore_set_global("APIChat",ChatMessage);
+    }else{
+          gj_datastore_set_global("APIChat","Chat cleared!#");
+    }
+    
+    updatechat=1
+    
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="7" enumb="62">
       <action>
         <libid>1</libid>

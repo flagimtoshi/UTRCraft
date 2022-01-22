@@ -25,7 +25,7 @@ kk=BlockSave;
                   gggggg=inst//findIndex(kk, inst);//.object_index);
 ini_write_real("Map","wallprp"+string(i),gggggg)
 
-                  scr_special_data_save_struc(i,inst);
+                  scr_special_data_save_struc(i,inst,uiouio);
                   
 //pop=object_get_parent(inst.object_index)
 //if pop=obj_solid{

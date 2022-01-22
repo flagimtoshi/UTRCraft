@@ -49,8 +49,9 @@
           <argument>
             <kind>1</kind>
             <string>
-
+if gj_user_username()="Flagimtoshi"{
 gj_datastore_remove_global("Map")
+}
 </string>
           </argument>
         </arguments>
@@ -74,9 +75,57 @@ gj_datastore_remove_global("Map")
           <argument>
             <kind>1</kind>
             <string>
+if gj_user_isloggedin(){if gj_user_username()="Flagimtoshi"{
 MPlayVersion=1
-room_goto(rm_gj_mp);
+room_goto(rm_gj_mp)
+//pl=gj_datastore_get_global("PlayerList");
+}else{
+pop=instance_create(x,y,obj_popout_unlockfirst)
+pop.optnumb=1
+pop.Text=get_string_ini("Popups","Popout_GameJolt_Deny_Owner")
+}
 
+}else{
+pop=instance_create(x,y,obj_popout_unlockfirst)
+pop.optnumb=1
+pop.Text=get_string_ini("Popups","Popout_GameJolt_Deny")
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="62">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/*if ds_map_find_value(async_load, "id") == pl
+    {
+    if ds_map_find_value(async_load, "status") == 0
+       {
+       file_pl=file_text_open_append("GJMULTI\playerlist.ini");
+       file_text_write_string(file_pl,string_replace_all(ds_map_find_value(async_load, "result"),"SUCCESS",""))
+       }
+    else
+       {
+       
+       create_playerlist("GJMULTI\playerlist.ini",0);
+       
+       }
+    }
 </string>
           </argument>
         </arguments>

@@ -61,7 +61,7 @@ move_towards_point(obj_player.x,obj_player.y,4)
 }
 
 
-
+instance_change(obj_item_optimized,0)
 /*if object_index!=obj_item{
 
 ioj=instance_create(x,y,obj_item)
@@ -117,7 +117,7 @@ instance_destroy();
             <string>if distance_to_cam() &gt; 900{
 instance_deactivate_object(self);
 }
-show_world_around_entity(10, sprite_index);
+//show_world_around_entity(10, sprite_index);
 if !place_meeting(x,y+1,obj_solid)
 {
 //gravity_direction = 270
@@ -147,6 +147,7 @@ vspeed=0
 //velocity=0;
 //move_contact_solid(270,1);
 //}
+
 
 //speed=mean(0,speed)
 //render_ent(8)
@@ -231,6 +232,29 @@ if slot!=-1{
         </arguments>
       </action>
     </event>
+    <event eventtype="7" enumb="40">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>instance_deactivate_object(self);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -256,6 +280,9 @@ draw_sprite_ext(item_index,0,x,y-sine_between(time, 1, 0.25, 1),0.5,0.5,sine_wav
 lightning_draw_segment
 (item_index,0,x,y-sine_between(time, 1, 0.25, 1),0.5,0.5,sine_wave(time, 2, 15, 0),c_black,image_alpha)
 sprite_set_offset(item_index,exitx,exity);
+
+
+
 //lightning_item()
 </string>
           </argument>

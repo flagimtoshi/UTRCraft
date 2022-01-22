@@ -71,7 +71,6 @@ room_goto(rm_ui_pc)</code>
     <instance objName="Button_socials_back" x="3504" y="128" name="inst_9C1573A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Button_socials" x="1735" y="736" name="inst_75B6EBA8" locked="0" code="" scaleX="0.5" scaleY="2.28500008583069" colour="4294967295" rotation="0"/>
     <instance objName="obj_worldsave_controller" x="192" y="32" name="inst_0DC50439" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_display_manager" x="0" y="0" name="inst_01F5215B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="&lt;undefined&gt;" x="64" y="384" w="640" h="480" xo="0" yo="0" id="10000005" name="inst_F04F20C9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

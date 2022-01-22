@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>///Display properties
+//*
+instance_destroy();
 if instance_exists(obj_player){
 target_width=0;
 target_height=108*obj_player.irrr;

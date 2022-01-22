@@ -2585,20 +2585,10 @@
     <instance objName="obj_dummy" x="1240" y="55" name="inst_ACD9C931" locked="0" code="" scaleX="0.75" scaleY="0.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_board1" x="944" y="104" name="inst_B30965C7" locked="0" code="link=&quot;https://dl.dropbox.com/s/x6i4p22674brd6l/board.png&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_board1" x="1048" y="104" name="inst_D9B5E8FA" locked="0" code="link=&quot;https://dl.dropbox.com/s/opd18rzf3r4c2c8/board2.png&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_guide" x="824" y="80" name="inst_B7F12B56" locked="0" code="music_enabled=1&#xA;instance_destroy();&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_space_helmet_prop" x="792" y="112" name="inst_1B1A99DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_claudia_head_prop" x="824" y="104" name="inst_246625AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_claudia_body_prop" x="824" y="104" name="inst_4FBBCDA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_claudia_legs_prop" x="824" y="120" name="inst_E4C22153" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_claudia_legs_prop" x="832" y="120" name="inst_62E737F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_claudia_tail_prop" x="816" y="120" name="inst_7E98AEE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_claudia_arms_prop" x="832" y="104" name="inst_7D9B6910" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_claudia_arms_prop" x="840" y="104" name="inst_100F8490" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_swirling_winds" x="968" y="64" name="inst_2A328E32" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_guide" x="816" y="120" name="inst_B7F12B56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_inventory" x="176" y="440" name="inst_CD8F05FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goldchest" x="832" y="144" name="inst_36391B46" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_attak_button" x="184" y="440" name="inst_F6B361B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_granrock_shop" x="816" y="152" name="inst_6CE4E76A" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_granrock_shop" x="1288" y="64" name="inst_6CE4E76A" locked="0" code="" scaleX="-0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

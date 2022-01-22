@@ -148,7 +148,7 @@ lightning(image_index);
 //draw_sprite(sprite_index,image_index+1,x,y)
 
 if close{
-draw_sprite_ext(sprite_index,image_index,x,y,0.5,0.5,0,c_white,0.5);
+draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,0,c_white,0.5);
 }
 </string>
           </argument>

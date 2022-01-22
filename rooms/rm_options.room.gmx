@@ -61,6 +61,7 @@
     <instance objName="obj_all_opts" x="96" y="320" name="inst_051FDB4B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Slider_scale_mult" x="1344" y="96" name="inst_F8B0753F" locked="0" code="" scaleX="5" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="Button_restart" x="1600" y="480" name="inst_0F409416" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Button_connectBlocks_toggle" x="1600" y="672" name="inst_8CBB452E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="&lt;undefined&gt;" x="64" y="384" w="640" h="480" xo="0" yo="0" id="10000005" name="inst_F04F20C9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

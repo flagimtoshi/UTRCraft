@@ -159,7 +159,7 @@ draw_sprite_ext
 lightning_draw_segment
 (control.sprites[obj_inventory.itemid[obj_inventory.selnumb]],0,_x,_y,0.5,0.5*obj_player.dirofv,arm_angle,c_black,image_alpha);
 
-
+if ! check_mplay() {
 if instance_exists(ji){
 
 switch (control.sprites[obj_inventory.itemid[obj_inventory.selnumb]]){
@@ -188,6 +188,7 @@ break;
 ji=instance_create(x,y,obj_light)
 ji.visible=0
 }
+}else{instance_destroy(ji)}
 }
 </string>
           </argument>

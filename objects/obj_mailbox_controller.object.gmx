@@ -31,7 +31,7 @@ Loaded=0;
 Mailname="";
 scrolloffset=0;
 width=640;
-file = file_find_first('Mailbox\*', fa_directory );
+file = file_find_first('mailbox\*', fa_directory );
 mailindex=0;
 Mail[mailindex]="Loaded!";
 Mailtype=0;
@@ -98,12 +98,37 @@ dragging=0;
             <kind>1</kind>
             <string>///functions
 if load_{
+   if file_exists("mailbox\"+Mail[mailindex]+"\text.txt"){
    //namee=string(current_second)+string(current_minute)+string(current_weekday);
    //scr_create_mail(namee)
-   if mailnumber=0{
-   show_message("No!")
-   }else{
+   if ! instance_exists(obj_news_popper){
    
+   i=instance_create(room_width/2,room_height/2,obj_news_popper)
+   
+   var o = 0;
+   var numbers=0;
+   filee=file_text_open_read("mailbox\"+Mail[mailindex]+"\text.txt");
+   while !file_text_eof(filee)
+   {
+        tmpspls[o++] = file_text_read_string(filee);
+        file_text_readln(filee);
+        numbers+=1;
+   }
+   file_text_close(filee);
+   p = 0
+                         repeat(numbers){
+                                  i.text=i.text+"#"+tmpspls[p];
+                                  p+=1;
+                         }
+                        if string_count("read ", Mail[mailindex])&lt;1{ 
+   file_copy("mailbox\"+Mail[mailindex]+"\text.txt",
+   "mailbox\"+"read "+Mail[mailindex]+"\text.txt");
+   
+   directory_destroy("mailbox\"+Mail[mailindex]);
+   instance_create(x,y,object_index);
+   instance_destroy(self,0);
+                            }
+   }
    }
 }
 
@@ -120,9 +145,11 @@ if create_{
 
 if delete_{
  if ! mailnumber=0{
-    directory_destroy("Mailbox\"+Mail[mailindex]);
+ if ! file_exists("mailbox\"+Mail[mailindex]){
+    directory_destroy("mailbox\"+Mail[mailindex]);
     instance_create(x,y,obj_mailbox_controller)
     instance_destroy(self);
+    }
  }
 }
 </string>
@@ -184,6 +211,16 @@ if mouse_check_button(mb_left) and mouse_x&lt;x+width{
 yy=(mouse_y-y)-scrolloffset;
 mailindex=round(yy/64)
 }
+if mouse_check_button_released(mb_left) and (mouse_x&gt;x+width and mouse_x&lt;x+width+64){
+yy=(mouse_y-y)-scrolloffset;
+mailindex=round(yy/64)
+load_=1;
+}
+if mouse_check_button_pressed(mb_left) and (mouse_x&gt;x+width+64 and mouse_x&lt;x+width+128){
+yy=(mouse_y-y)-scrolloffset;
+mailindex=round(yy/64)
+delete_=1;
+}
 if mouse_check_button_pressed(mb_left){
 dragging=1
 drag_y = mouse_y
@@ -227,11 +264,19 @@ draw_set_valign(fa_middle)
 draw_sprite_pos
 (spr_button,0,
 x,y+(i*64)+scrolloffset-30,
-x+width,y+(i*64)+scrolloffset-30,
-x+width,y+(i*64)+scrolloffset+30,
+x+width+128,y+(i*64)+scrolloffset-30,
+x+width+128,y+(i*64)+scrolloffset+30,
 x,y+(i*64)+scrolloffset+30,
 1
 )
+draw_line_width(x+width,y+(i*64)+scrolloffset-30
+,x+width,y+(i*64)+scrolloffset+30,4);
+draw_sprite(icon_open,0,x+width+32,y+(i*64)+scrolloffset)
+
+draw_line_width(x+width+64,y+(i*64)+scrolloffset-30
+,x+width+64,y+(i*64)+scrolloffset+30,4);
+draw_sprite(icon_trashbin,0,x+width+32+64,y+(i*64)+scrolloffset)
+
 if i=mailindex{
 draw_text(x,y+(i*64)+scrolloffset," Mail:  -&gt;"+string(Mail[i]));
 }else{

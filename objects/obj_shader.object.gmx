@@ -42,15 +42,15 @@ draw_sprite_ext(spr_bs_high,0,x,y,0.1,0.1,0,c_black,1);
 
 if object_index=obj_grass{
 draw_sprite_ext(spr_extra_shad,0,x,y,1,1,0,colour,1);
-lightning_shader(0,spr_extra_shad);
+lightning_draw_segment(spr_extra_shad,0,x,y,1,1,0,c_black,image_alpha);
 }
 if object_index=obj_leaves{
 draw_sprite(spr_extra_shad,1,x,y);
-lightning_shader(1,spr_extra_shad);
+lightning_draw_segment(spr_extra_shad,1,x,y,1,1,0,c_black,image_alpha);
 }
 if object_index=obj_haybale{
 draw_sprite(spr_extra_shad,8,x,y);
-lightning_shader(8,spr_extra_shad);
+lightning_draw_segment(spr_extra_shad,8,x,y,1,1,0,c_black,image_alpha);
 }
 if object_index=obj_hard_block{
 draw_sprite_ext(spr_extra_thicc_shad,0,x,y,1,1,0,c_black,1);

@@ -54,7 +54,16 @@ ini_write_string("Map","parent"+string(i),inst.parent)
 ini_write_string("Map","source"+string(i),inst.source)
 break;
 
-default:
-ini_write_string("Map","Error"+string(i),"This is an Error")
+case obj_other_player:
+ini_write_string("Map","Username"+string(i),inst.Username)
+ini_write_string("Map","Weapon"+string(i),inst.weapon_indexx)
+ini_write_string("Map","Pant"+string(i),inst.pant)
+ini_write_string("Map","Head"+string(i),inst.head)
+ini_write_string("Map","Taio"+string(i),inst.tail)
+ini_write_string("Map","Body"+string(i),inst.body)
+ini_write_string("Map","PColour"+string(i),inst.pcolour)
+ini_write_string("Map","iae"+string(i),inst.iae)
+ini_write_string("Map","hjh"+string(i),inst.hjh)
+ini_write_string("Map","hkh"+string(i),inst.hkh)
 break;
 }

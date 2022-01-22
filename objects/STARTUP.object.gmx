@@ -67,7 +67,7 @@ gml_release_mode(true);
 random_use_old_version(true)
 globalvar Username, uC, HATS, JACKETS, TAILS, GOLD, PANTS, debug, shader, MinecraftSkin, DebugMSG, Online, NameShow,
 ClassicUI, connectBlocks, Money, Accessoires
-, Crashprot, GJChat, LatestVersion;
+, Crashprot, GJChat, LatestVersion, lightning_basic;
                 globalvar structure_generating;structure_generating=0;
 Username="";
 uC=1;
@@ -82,10 +82,11 @@ Online="";
 LatestVersion="0";
 NameShow=0;
 ClassicUI=0;
-connectBlocks=0;
-Money=0;
+connectBlocks=1;
+Money=10;
 Accessoires=0;
-GJChat=0;
+GJChat=1;
+lightning_basic=0;
 
 Crashprot=1;
 
@@ -97,10 +98,10 @@ scr_load_stms();
 globalvar emojicode;emojicode=232;
 globalvar fnt_pixels;fnt_pixels=font_add_sprite(spr_pixlels, 32, 1, 1);
 if file_exists("skin.png"){
-sprite_replace(spr_player,"skin.png",0,0,0,4,10)
+sprite_replace(spr_player_chroma,"skin.png",0,0,0,4,10)
 }
 if file_exists("hand.png"){
-sprite_replace(spr_hand,"hand.png",0,0,0,0,1)
+sprite_replace(spr_hand_chroma,"hand.png",0,0,0,0,1)
 }
 
 

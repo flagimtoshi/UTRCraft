@@ -12,6 +12,7 @@ if ! uC=0 or structure_generating=0{
     //instance_deactivate_object(obj_camplight);
     //instance_deactivate_object(obj_furnace_light);
     instance_deactivate_object(obj_solid);
+    instance_deactivate_object(obj_baseblock);
     instance_deactivate_object(obj_snow_layer);
     }
 
@@ -60,7 +61,7 @@ if (uC = 0) or (structure_generating=1){
 }
 }
 
-instance_activate_object(obj_cave_med)
-instance_activate_object(obj_human)
-instance_activate_object(obj_mob)
-instance_activate_object(obj_structure_block)
+//instance_activate_object(obj_cave_med)
+//instance_activate_object(obj_human)
+//instance_activate_object(obj_mob)
+//instance_activate_object(obj_structure_block)

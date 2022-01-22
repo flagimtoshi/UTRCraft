@@ -28,6 +28,7 @@
             <string>hp=1000
 shield=0
 image_speed=0.5
+instance_destroy(obj_breaking)
 </string>
           </argument>
         </arguments>

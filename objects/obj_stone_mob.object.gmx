@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hp=20
+            <string>hp=5
 
 pHATS=random(12)
 pJACKETS=random(5)
@@ -49,10 +49,11 @@ image_xsize=0.5
 mx=datarget.x
 my=datarget.y
 dialogbox=obj_talk_claudia;
+ai=1;
 
 outfit=random(sprite_get_number(spr_granrock_hat))//skin
 rank=random(3);
-panic=0;
+panic=0;breaking=false;  //block break code vars uwu
 
 item="";//"Pistol"
 canshoot=0
@@ -436,14 +437,21 @@ gravity = 0
 if panic=0{
 ai_human();
 }else{
-if ! place_meeting(x-4,y+4,obj_breaking){
-br=instance_create(x-4,y+4,obj_breaking)
-br.pb=false  //no player breaking
-br.slec=true
-br.image_speed=0.05
-panic=0
+
+if breaking=false{
+br=instance_create(x-4,y+6,obj_breaking);
+br.pb=false;  //no player breaking
+br.slec=true;
+br.image_speed=0.1;
+panic=0;
 ai=0;
+breaking=true;
 }
+
+if ! instance_exists(br){
+breaking=false;
+}
+
 }
 if x=xprevious{
 move=0

@@ -83,6 +83,33 @@ version=0;
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Player Connect code
+selfplayer=instance_create(x,x,obj_other_player);
+selfplayer.Username=gj_user_username();
+
+pl=0;
+
+onl_playernumber=0;
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="2" enumb="1">
       <action>
@@ -246,6 +273,8 @@ u=obj_player.Username
 //gj_datastore_set_global("xPos"+u,string(xx));
 //gj_datastore_set_global("yPos"+u,string(yy));
 
+//pl=gj_datastore_get_global("PlayerList");
+
 
 scr_save_player_mp(Username);
 Textt="";
@@ -285,7 +314,22 @@ gj_datastore_set_global("PlDa"+Username,Textt);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*instance_activate_all();
+            <string>if ! instance_exists(obj_other_player){
+sdfghjkl_=instance_create(x,y,obj_other_player);
+sdfghjkl_.Username=gj_user_username();
+}
+/*numberplayer_=instance_number(obj_other_player);
+if onl_playernumber&gt;numberplayer_{
+var i;
+i=numberplayer_;
+repeat(onl_playernumber-numberplayer_){
+temp_=instance_create(0,0,obj_other_player);
+temp_.Username=playername_[i]
+i+=1;
+}
+}
+
+instance_activate_all();
 scr_save_map_mp("tmp.mp");
 Textt="";
 file = file_text_open_read("tmp.mp");
@@ -361,17 +405,19 @@ gj_datastore_set_global("Map",Textt);
        gj_datastore_set_global("Playernumber",hjjh);
     }
     
-    if ds_map_find_value(async_load, "id") == pnn
+    /*if ds_map_find_value(async_load, "id") == pl
     {
     if ds_map_find_value(async_load, "status") == 0
        {
-       PlayerNumber = string_replace_all(ds_map_find_value(async_load, "result"),"SUCCESS","");
+       file_pl=file_text_open_append("GJMULTI\playerlist.ini");
+       file_text_write_string(file_pl,string_replace_all(ds_map_find_value(async_load, "result"),"SUCCESS",""))
        }
     else
        {
+       create_playerlist("GJMULTI\playerlist.ini",numberplayer_);
        
        }
-    }
+    }*/
     
 </string>
           </argument>

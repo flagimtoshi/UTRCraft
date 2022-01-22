@@ -477,6 +477,9 @@ HP-=speedquotient*2;
 
 }
 
+if keyboard_check(ord("U")){
+room_speed=900;
+}else{room_speed=30}
 
 if keyboard_check_pressed(ord("H")){
    view_hport=view_hport*2
@@ -573,7 +576,7 @@ speed=clamp(speed,-20,20);
             <kind>1</kind>
             <string>/// Player Standard stuffs
 //cam
-scr_basic_anticheat();
+//scr_basic_anticheat();
 if cambobb &lt; cambob { cambob-=0.5 }
 if cambobb &gt; cambob { cambob+=0.5 }
 view_xview=x-(view_wview/2)+cambob
@@ -1078,11 +1081,11 @@ cold=0
           <argument>
             <kind>1</kind>
             <string>///Rainbow Controller
-rainbow+=1
-playercolour=make_colour_hsv(rainbow,255,255)
-if rainbow&gt;255{
-rainbow=0
-}
+//rainbow+=1
+//playercolour=make_colour_hsv(rainbow,255,255)
+//if rainbow&gt;255{
+//rainbow=0
+//}
 </string>
           </argument>
         </arguments>

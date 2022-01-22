@@ -54,7 +54,7 @@
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>10</string>
+            <string>30</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -105,7 +105,7 @@ game_end();
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>10</string>
+            <string>600</string>
           </argument>
           <argument>
             <kind>4</kind>

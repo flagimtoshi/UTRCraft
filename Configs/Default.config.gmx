@@ -57,7 +57,7 @@
     <option_android_licensing_key></option_android_licensing_key>
     <option_android_lint>-1</option_android_lint>
     <option_android_major_version>0</option_android_major_version>
-    <option_android_min_sdk_version>9</option_android_min_sdk_version>
+    <option_android_min_sdk_version>14</option_android_min_sdk_version>
     <option_android_minor_version>7</option_android_minor_version>
     <option_android_mmedia_ads>false</option_android_mmedia_ads>
     <option_android_moga>0</option_android_moga>
@@ -523,7 +523,7 @@
     <option_version_major>0</option_version_major>
     <option_version_minor>7</option_version_minor>
     <option_version_product>UTRCraft</option_version_product>
-    <option_version_release>7</option_version_release>
+    <option_version_release>8</option_version_release>
     <option_win8_advertising_appid></option_win8_advertising_appid>
     <option_win8_advertising_enable>0</option_win8_advertising_enable>
     <option_win8_advertising_key></option_win8_advertising_key>
@@ -608,7 +608,7 @@
     <option_windows_major_version>0</option_windows_major_version>
     <option_windows_nsis_file>Configs\Default\windows\RunnerInstaller.nsi</option_windows_nsis_file>
     <option_windows_product_info>UTRCraft</option_windows_product_info>
-    <option_windows_release_version>7</option_windows_release_version>
+    <option_windows_release_version>8</option_windows_release_version>
     <option_windows_runner_finished>Configs\Default\windows\Runner_finish.bmp</option_windows_runner_finished>
     <option_windows_runner_header>Configs\Default\windows\Runner_header.bmp</option_windows_runner_header>
     <option_windows_save_location>1</option_windows_save_location>
@@ -706,7 +706,7 @@
   </Options>
   <ConfigConstants>
     <constants number="2">
-      <constant name="UTRCraftVersion">"November BETA 0.7.7 21w48a"</constant>
+      <constant name="UTRCraftVersion">"January  Beta 22w03b"</constant>
       <constant name="SpaceOffset">-512</constant>
     </constants>
   </ConfigConstants>

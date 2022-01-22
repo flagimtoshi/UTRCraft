@@ -73,8 +73,8 @@ ligt_ext(0,view_xview/1.2+325,(view_yview+view_hview/2)/1.7+90,0.5,0.5);
 io=0;
 repeat(number_of_clouds)
 {
-draw_sprite_ext(spr_cloud,io,(view_xview/1.2+164)+(cloudx_array[io]),((view_yview+view_hview/2)/1.7)+(cloudy_array[io]),0.5,0.5,0,image_blend,0.5);
-if (cloudx_array[io]&gt;-64){
+draw_sprite_ext(spr_cloud,io,(view_xview/1.2+164)+(cloudx_array[io]),((view_yview+view_hview/2)/1.7)+(cloudy_array[io]),0.5,0.5,0,image_blend,1);
+if ((cloudx_array[io])&gt;(-64)){
 cloudx_array[io]-=cloudspeed;
 }else{
 cloudx_array[io]=view_wview+64;

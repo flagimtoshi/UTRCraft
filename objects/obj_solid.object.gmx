@@ -144,7 +144,11 @@ ii=random(8)
           <argument>
             <kind>1</kind>
             <string>draw_self();
-lightning(image_index);
+lightning_draw_segment(sprite_index,
+image_index, x, y, image_xscale, image_yscale,
+image_angle, c_black, image_alpha );
+//lightning(image_index);
+
 </string>
           </argument>
         </arguments>
