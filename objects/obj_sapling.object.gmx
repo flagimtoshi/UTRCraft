@@ -127,7 +127,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>heehee=irandom_range(0,2);
+            <string>heehee=irandom_range(0,3);
 
 switch(heehee){
 case 0:
@@ -141,6 +141,10 @@ break;
 case 2:
      strucblock=instance_create(x,y,obj_structure_block);
      strucblock.filename="tree\regular\gianttree";
+break;
+case 3:
+     strucblock=instance_create(x,y,obj_structure_block);
+     strucblock.filename="tree\regular\treefancy";
 break;
 default:
         strucblock=instance_create(x,y,obj_structure_block);

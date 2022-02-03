@@ -75,7 +75,8 @@ ii=random_range(10,32);//random_range(10,32);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//instance_activate_all();
+            <string>
+//instance_activate_all();
 </string>
           </argument>
         </arguments>
@@ -98,8 +99,9 @@ ii=random_range(10,32);//random_range(10,32);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-sBlock(x,y,obj_granstone_dungeon)
+            <string>strucblock=instance_create(x,y-8,obj_structure_block);
+strucblock.filename="underground\granrockdungeon";
+//sBlock(x,y,obj_granstone_dungeon)
 instance_destroy();
 </string>
           </argument>

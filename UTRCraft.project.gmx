@@ -3,7 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="34" name="datafiles">
+  <datafiles number="36" name="datafiles">
     <datafile>
       <name>logo.png</name>
       <exists>-1</exists>
@@ -38,7 +38,7 @@
       </ConfigOptions>
       <filename>ProcessBlacklist.dll</filename>
     </datafile>
-    <datafiles number="34" name="lang">
+    <datafiles number="36" name="lang">
       <datafile>
         <name>lang.ini</name>
         <exists>-1</exists>
@@ -57,7 +57,7 @@
         <filename>lang.ini</filename>
       </datafile>
     </datafiles>
-    <datafiles number="34" name="structures">
+    <datafiles number="36" name="structures">
       <datafile>
         <name>test.struct</name>
         <exists>-1</exists>
@@ -75,8 +75,8 @@
         </ConfigOptions>
         <filename>test.struct</filename>
       </datafile>
-      <datafiles number="34" name="tree">
-        <datafiles number="34" name="regular">
+      <datafiles number="36" name="tree">
+        <datafiles number="36" name="regular">
           <datafile>
             <name>gianttree.struct</name>
             <exists>-1</exists>
@@ -128,10 +128,27 @@
             </ConfigOptions>
             <filename>tree.struct</filename>
           </datafile>
+          <datafile>
+            <name>treefancy.struct</name>
+            <exists>-1</exists>
+            <size>1918</size>
+            <exportAction>2</exportAction>
+            <exportDir></exportDir>
+            <overwrite>0</overwrite>
+            <freeData>-1</freeData>
+            <removeEnd>0</removeEnd>
+            <store>0</store>
+            <ConfigOptions>
+              <Config name="Default">
+                <CopyToMask>9223372036854775807</CopyToMask>
+              </Config>
+            </ConfigOptions>
+            <filename>treefancy.struct</filename>
+          </datafile>
         </datafiles>
       </datafiles>
-      <datafiles number="34" name="Space">
-        <datafiles number="34" name="random">
+      <datafiles number="36" name="Space">
+        <datafiles number="36" name="random">
           <datafile>
             <name>Meteor1.struct</name>
             <exists>-1</exists>
@@ -236,8 +253,8 @@
           <filename>MeteorCore.struct</filename>
         </datafile>
       </datafiles>
-      <datafiles number="34" name="granrock">
-        <datafiles number="34" name="village">
+      <datafiles number="36" name="granrock">
+        <datafiles number="36" name="village">
           <datafile>
             <name>lamp.struct</name>
             <exists>-1</exists>
@@ -257,8 +274,27 @@
           </datafile>
         </datafiles>
       </datafiles>
+      <datafiles number="36" name="underground">
+        <datafile>
+          <name>granrockdungeon.struct</name>
+          <exists>-1</exists>
+          <size>4330</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>granrockdungeon.struct</filename>
+        </datafile>
+      </datafiles>
     </datafiles>
-    <datafiles number="34" name="voicelines">
+    <datafiles number="36" name="voicelines">
       <datafile>
         <name>combat.ogg</name>
         <exists>-1</exists>
@@ -345,7 +381,7 @@
         <filename>sprint.ogg</filename>
       </datafile>
     </datafiles>
-    <datafiles number="34" name="Discord">
+    <datafiles number="36" name="Discord">
       <datafile>
         <name>discord_rich_presence.dll</name>
         <exists>0</exists>
@@ -415,8 +451,8 @@
       </ConfigOptions>
       <filename>splashes.txt</filename>
     </datafile>
-    <datafiles number="34" name="sounds">
-      <datafiles number="34" name="door">
+    <datafiles number="36" name="sounds">
+      <datafiles number="36" name="door">
         <datafile>
           <name>door_close.ogg</name>
           <exists>-1</exists>
@@ -892,6 +928,9 @@
     <sprite>sprites\spr_orbitals</sprite>
     <sprite>sprites\spr_textbar</sprite>
     <sprite>sprites\spr_cloud</sprite>
+    <sprites name="struc icons">
+      <sprite>sprites\icon_granrock_housing</sprite>
+    </sprites>
     <sprite>sprites\icon_controls</sprite>
     <sprite>sprites\icon_dc_rp</sprite>
     <sprite>sprites\icon_camera</sprite>
@@ -907,6 +946,7 @@
       <sprite>sprites\spr_np_example</sprite>
     </sprites>
     <sprite>sprites\intrologo</sprite>
+    <sprite>sprites\spr_light_intro_chp1</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -934,6 +974,7 @@
   </backgrounds>
   <paths name="paths">
     <path>paths\pt_protorat_spin</path>
+    <path>paths\pt_spark_intro</path>
   </paths>
   <scripts name="scripts">
     <script>scripts\sBlock.gml</script>
@@ -1061,6 +1102,7 @@
     <script>scripts\check_mplay.gml</script>
     <script>scripts\scr_sine.gml</script>
     <script>scripts\create_playerlist.gml</script>
+    <script>scripts\structure_build.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
@@ -1563,6 +1605,9 @@
       <object>objects\obj_gen</object>
       <object>objects\object226</object>
       <object>objects\obj_cave_des</object>
+      <objects name="granrocks">
+        <object>objects\obj_granrock_housing</object>
+      </objects>
     </objects>
     <objects name="inv">
       <object>objects\control</object>
@@ -1640,6 +1685,10 @@
       <object>objects\obj_prop</object>
       <object>objects\obj_claudia_prop</object>
     </objects>
+    <objects name="first chapter intro">
+      <object>objects\obj_intro_chp_1_spark</object>
+      <object>objects\obj_images_chp_1</object>
+    </objects>
     <object>objects\obj_np_notification</object>
   </objects>
   <rooms name="rooms">
@@ -1656,6 +1705,7 @@
       <room>rooms\rm_modding_tools</room>
       <room>rooms\rm_news</room>
     </rooms>
+    <room>rooms\rm_chp_1_intro</room>
     <room>rooms\room0</room>
     <room>rooms\rm_gj_mp</room>
     <room>rooms\rm_animation_editior</room>
