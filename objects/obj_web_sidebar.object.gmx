@@ -50,7 +50,7 @@ xtar=xx
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>xx=mean(xx,xtar)
+            <string>xx=lerp(xx,xtar,0.2)
 Button_web_template.x=(x+36)-xx;
 </string>
           </argument>

@@ -98,8 +98,8 @@ alarm[0]=1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>view_xview=mean(view_xview,view_xview,view_xview,needx-(view_wview/4));
-view_yview=mean(view_yview,view_yview,view_yview,needy-(view_hview/2));
+            <string>view_xview=lerp(view_xview,needx-(view_wview/4),0.15);//lerp(view_xview,needx-(view_wview/4),0.2);
+view_yview=lerp(view_yview,needy-(view_hview/2),0.15);//lerp(view_yview,needy-(view_hview/2),0.2);
 x=needx;//view_xview+
 y=needy;
 </string>

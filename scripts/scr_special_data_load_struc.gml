@@ -5,7 +5,7 @@ i=argument1;
 switch(BlockSave[ioo]){
 
 case obj_custom_block:
-ioo.OTL=ini_read_string("Map","LinkToImage"+string(i),"");
+//ioo.OTL=ini_read_string("Map","LinkToImage"+string(i),"");
 break;
 
 case obj_claudia:

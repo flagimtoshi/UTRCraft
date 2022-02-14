@@ -64,7 +64,7 @@
     <instance objName="obj_credit" x="1536" y="736" name="inst_CB570EAD" locked="0" code="" scaleX="0.699999988079071" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Button_GameJoltLogin" x="2256" y="1008" name="inst_075A8074" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Button_socials" x="1536" y="496" name="inst_5A6EC54A" locked="0" code="" scaleX="0.699999988079071" scaleY="1.20000004768372" colour="4294967295" rotation="0"/>
-    <instance objName="obj_PC_cam" x="224" y="32" name="inst_5FC3739F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_PC_cam" x="432" y="352" name="inst_5FC3739F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Button_socials_back" x="3472" y="112" name="inst_C03B0500" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Button_NextServiceComingSoon" x="2880" y="1008" name="inst_E9312972" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Button_NextServiceComingSoon" x="3504" y="1008" name="inst_7874F978" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>

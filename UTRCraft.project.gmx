@@ -512,6 +512,7 @@
     <extension index="1">extensions\GMSched</extension>
     <extension index="2">extensions\Better Scaling</extension>
     <extension index="3">extensions\Nvidia Push</extension>
+    <extension index="4">extensions\Flagimloader</extension>
   </NewExtensions>
   <sounds name="sound">
     <sound>sound\snd_boom</sound>
