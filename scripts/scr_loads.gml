@@ -157,7 +157,11 @@ NameShow=ini_read_real("Opt","NameShow",0);
 ClassicUI=ini_read_real("Opt","ClassicTitlescreen",0);
 connectBlocks=ini_read_real("Opt","ConnectBlocks",1);
 GJChat=ini_read_real("Opt","GameJoltChat",1);
+if os_type!=os_android{
 scale_mult=ini_read_real("Opt","Scale",0.75);
+}else{
+scale_mult=ini_read_real("Opt","Scale",1);
+}
 var key1, key2;
 key1=base64_decode(ini_read_string("Opt","key1DONOTCHANGE","OTU="));
 key2=base64_decode(ini_read_string("Opt","key2DONOTCHANGE","NzA="));

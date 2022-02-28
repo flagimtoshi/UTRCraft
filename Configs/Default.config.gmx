@@ -706,7 +706,7 @@
   </Options>
   <ConfigConstants>
     <constants number="2">
-      <constant name="UTRCraftVersion">"January  Beta 22w03b"</constant>
+      <constant name="UTRCraftVersion">"January  Beta 22w09a"</constant>
       <constant name="SpaceOffset">-512</constant>
     </constants>
   </ConfigConstants>

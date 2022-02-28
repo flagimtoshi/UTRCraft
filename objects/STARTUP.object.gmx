@@ -31,7 +31,10 @@ playercolour=c_blue
 MPlayVersion=0;
 
 globalvar scale_mult;
-scale_mult=0.5
+if os_type!=os_android{
+scale_mult=0.5}else{
+scale_mult=1
+}
 
 view_wport=view_wport*.1
 view_hport=view_hport*.1
