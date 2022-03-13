@@ -52,7 +52,6 @@ window_set_position(centrex-(tarsize[0]/2),centrey-(tarsize[1]/2))
 view_wview=tarsize[0]
 view_hview=tarsize[1]
 
-
 //window_set_fullscreen(1)
 </string>
           </argument>

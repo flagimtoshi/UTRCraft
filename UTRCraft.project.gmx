@@ -1138,6 +1138,7 @@
       <object>objects\obj_frank</object>
       <object>objects\obj_mailbox_controller</object>
       <object>objects\obj_display_manager</object>
+      <object>objects\obj_music_controller</object>
     </objects>
     <object>objects\obj_player</object>
     <object>objects\obj_hand</object>
@@ -1514,6 +1515,7 @@
       <objects name="sliders">
         <object>objects\Slider_player_chroma</object>
         <object>objects\Slider_scale_mult</object>
+        <object>objects\Slider_music_volume</object>
       </objects>
       <object>objects\obj_popout_msg</object>
       <objects name="mailbox">

@@ -69,7 +69,7 @@
     <instance objName="Button_NextServiceComingSoon" x="2880" y="1008" name="inst_E9312972" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Button_NextServiceComingSoon" x="3504" y="1008" name="inst_7874F978" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_gjapi_globalchat_shower" x="3405" y="208" name="inst_54563EBB" locked="0" code="if GJChat=0{&#xA;instance_destroy();&#xA;}&#xA;" scaleX="13.5" scaleY="22" colour="4294967295" rotation="0"/>
-    <instance objName="obj_logo" x="960" y="208" name="inst_17F11C92" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="obj_logo" x="960" y="208" name="inst_17F11C92" locked="-1" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_item_list" x="2032" y="-64" name="inst_EE9662F9" locked="0" code="" scaleX="10" scaleY="10" colour="4294967295" rotation="0"/>
     <instance objName="obj_gamer_inventory" x="2000" y="192" name="inst_A94F95D3" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_speech_bubble" x="2112" y="-128" name="inst_A136FB65" locked="0" code="" scaleX="29.5" scaleY="3.09677410125732" colour="4294967295" rotation="0"/>
@@ -85,6 +85,7 @@
     <instance objName="STARTUP" x="176" y="64" name="inst_7F41F30C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_frank" x="336" y="112" name="inst_CEEE24E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Button_TestAds" x="1008" y="-208" name="inst_98B4FF56" locked="0" code="" scaleX="0.526666641235352" scaleY="1.0402684211731" colour="4294967295" rotation="0"/>
+    <instance objName="obj_splashes" x="1248" y="304" name="inst_45F02670" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="&lt;undefined&gt;" x="64" y="384" w="640" h="480" xo="0" yo="0" id="10000005" name="inst_F04F20C9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

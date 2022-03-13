@@ -30,7 +30,7 @@ s1.variable=scale_mult
 s1.variablemouse=s1.variable*(sprite_width-(10*image_xscale))
 s1.image_xscale=image_xscale
 s1.image_yscale=image_yscale
-s1.text="Scale%"
+s1.text=get_string_ini("Sliders","Slider_Scale")//"Scale%"
 
 
 </string>

@@ -138,6 +138,7 @@ ini_write_real("Opt","ClassicTitlescreen",ClassicUI);
 ini_write_real("Opt","ConnectBlocks",connectBlocks);
 ini_write_real("Opt","GameJoltChat",GJChat);
 ini_write_real("Opt","Scale",scale_mult);
+ini_write_real("Opt","MusicVolume",obj_music_controller.music_vol);
 
 //                                                  Save the moneyyyy (but encrypt)
 

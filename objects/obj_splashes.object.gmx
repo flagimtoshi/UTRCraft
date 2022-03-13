@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-100</depth>
+  <depth>-1002</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -30,9 +30,14 @@ MyFont = fnt_pixels//font1
 Text = "ERROR: report this bug if you see it! Thank you! (this is not a spalsh)"
 size = 1
 colour = c_yellow
-bm = true
-sm = false
+//bm = true
+//sm = false
 maxsize = 1.1
+if irandom(15)=7{
+visible=1
+}else{
+visible=0
+}
 /*file = file_text_open_read("splashes.txt");
 var i = 0;
 var numbers=0;
@@ -45,8 +50,10 @@ while !file_text_eof(file)
 randomize();
 file_text_close(file);'
 Text=tmpspls[irandom(array_length_1d(tmpspls) - 1)];*/
+txtfile=scr_random_out_file("splashes.txt")
+Text=txtfile
+window_set_caption("UTRCraft: "+txtfile)
 
-window_set_caption("UTRCraft: "+scr_random_out_file("splashes.txt"))
 //( ?° ?? ?°)¯\_(°_°)_/¯
 /*switch(numb)
 {
@@ -185,136 +192,6 @@ break;
           </argument>
         </arguments>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>301</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_alarm</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>2</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/*///load world and convex
-Textt="";
-file = file_text_open_read("worldmp.wrld");
-var i = 0;
-var numbers=0;
-while !file_text_eof(file)
-{
-    tmpspls[i++] = file_text_read_string(file);
-    file_text_readln(file);
-    Textt=Textt+"
-    "+tmpspls[numbers]
-    numbers+=1;
-}
-
-
-
-file_text_close(file);
-file = file_text_open_write("worldmp.wrld")
-file_text_write_string(file,Textt);
-file_text_close(file);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if size = maxsize
-{
-bm = false
-sm = true
-}
-if size = 1
-{
-bm = true
-sm = false
-}
-
-if bm = true
-{
-size += 0.0125
-}else{
-if sm = true
-{
-size -= 0.0125
-}
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>301</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_alarm</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>2</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
     </event>
     <event eventtype="8" enumb="0">
       <action>
@@ -333,16 +210,20 @@ size -= 0.0125
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_halign( fa_center );
+            <string>//if os_type=os_windows{
+angle=20
+size=sine_between(current_time/1000,0.5,1,maxsize)
+draw_set_halign( fa_center );
 draw_set_valign( fa_middle );
 draw_set_font(MyFont)
 draw_set_color(c_dkgray)
-draw_text_ext_transformed(x,y,Text,24,320,size*3,size*3,28)
+draw_text_ext_transformed(x,y,Text,24,320,size*3,size*3,angle)
 draw_set_color(colour)
-draw_text_ext_transformed(x-3,y-3,Text,24,320,size*3,size*3,28)
+draw_text_ext_transformed(x-3,y-3,Text,24,320,size*3,size*3,angle)
 draw_set_color(c_white)
 draw_set_halign( fa_left );
 draw_set_valign( fa_top );
+//}
 </string>
           </argument>
         </arguments>

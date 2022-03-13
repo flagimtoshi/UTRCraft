@@ -178,6 +178,7 @@ draw_sprite_ext(sprite_index,0,x-4,y,2,1,0,c_black,0.7)
 }
 
 draw_self()
+lightning(0);
 </string>
           </argument>
         </arguments>

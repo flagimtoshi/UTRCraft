@@ -198,6 +198,7 @@ if (result == request)
         gj_scores_add("383047",string(Money),string(Money),"");
         scr_game_jolt_autosave();
         gj_trophy_add("134334");
+        Username=gj_user
         }
      }
 }

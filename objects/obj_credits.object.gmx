@@ -25,7 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if file_exists("music/credits.txt"){
+file_credits=file_text_open_read("music/credits.txt")
+MusicCredits=file_text_read_string(file_credits)
+file_text_close(file_credits)
+}else{
+MusicCredits="no music loaded/no credit given"
+}
 text=
 "- Programming "+ emoji(10) +" -
 
@@ -44,6 +50,10 @@ Flagimtoshi
 UnknownXerios
 
 
+- Music "+ emoji(19) +" -#
+"+MusicCredits+"
+
+
 - Special Thanks "+ emoji(0) +" -
 
 UnknownXerios
@@ -52,6 +62,7 @@ YourBoiiiLeo
 MedionJuenger
 Kageno
 you ;)
+
 
 - Lovely Feedback -
 @Night_Crystal652

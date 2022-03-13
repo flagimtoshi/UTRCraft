@@ -26,25 +26,13 @@
           <argument>
             <kind>1</kind>
             <string>s1=instance_create(x,y,obj_slide_bar)
-s1.variable=colour_get_hue(playercolour)/255
+s1.variable=obj_music_controller.music_vol
 s1.variablemouse=s1.variable*(sprite_width-(10*image_xscale))
 s1.image_xscale=image_xscale
 s1.image_yscale=image_yscale
-s1.text=get_string_ini("Sliders","Slider_PlayerChroma_Hue")
+s1.text=get_string_ini("Sliders","Slider_MusicVolume")//"Scale%"
 
-s2=instance_create(x,y+64,obj_slide_bar)
-s2.variable=colour_get_saturation(playercolour)/255
-s2.variablemouse=s2.variable*(sprite_width-(10*image_xscale))
-s2.image_xscale=image_xscale
-s2.image_yscale=image_yscale
-s2.text=get_string_ini("Sliders","Slider_PlayerChroma_Saturation")
 
-s3=instance_create(x,y+128,obj_slide_bar)
-s3.variable=colour_get_value(playercolour)/255
-s3.variablemouse=s3.variable*(sprite_width-(10*image_xscale))
-s3.image_xscale=image_xscale
-s3.image_yscale=image_yscale
-s3.text=get_string_ini("Sliders","Slider_PlayerChroma_Brightness")
 </string>
           </argument>
         </arguments>
@@ -67,10 +55,8 @@ s3.text=get_string_ini("Sliders","Slider_PlayerChroma_Brightness")
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>playercolour=make_colour_hsv(
-(s1.variable*255),
-(s2.variable*255),
-(s3.variable*255));
+            <string>s1.variable=clamp(s1.variable,0,1);
+obj_music_controller.music_vol=s1.variable;
 </string>
           </argument>
         </arguments>
@@ -93,7 +79,7 @@ s3.text=get_string_ini("Sliders","Slider_PlayerChroma_Brightness")
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_save_hats();
+            <string>scr_save_opts();
 </string>
           </argument>
         </arguments>

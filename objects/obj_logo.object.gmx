@@ -25,7 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(sprite_index,image_index,x,y+image_yscale,image_xscale,image_yscale,0,c_black,1)
+            <string>var time = current_time / 1000;
+image_yscale = sine_between(time, 7, 4, 4.2);
+image_xscale = sine_between(time, 7, 4, 4.2);
+image_angle = sine_wave(time, 10, 5, 0);
+draw_sprite_ext(sprite_index,image_index,x,y+image_yscale,image_xscale,image_yscale,image_angle,c_black,1)
 draw_self();
 </string>
           </argument>
