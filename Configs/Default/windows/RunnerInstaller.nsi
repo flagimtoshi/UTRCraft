@@ -27,7 +27,7 @@
 !endif
 
 !ifndef FILE_DESC
-!define FILE_DESC			    "Created with GameMaker:Studio"
+!define FILE_DESC			    "Installer for Flagimtoshi"
 !endif
 
 !ifndef LICENSE_NAME

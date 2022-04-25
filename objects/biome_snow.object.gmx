@@ -232,7 +232,7 @@ if (image_alpha&lt;1)
           <argument>
             <kind>1</kind>
             <string>draw_sprite_ext(sprite_index,image_index,x,y,10,1,0,image_blend,image_alpha);
-ligt_all(0,x,y,10,1,0,image_alpha);
+ligt_all(sprite_index,0,x,y,10,1,0,image_alpha);
 
 if ! place_meeting(x,y,obj_player){
    if (image_alpha&gt;0)
@@ -262,15 +262,15 @@ if ! place_meeting(x,y,obj_player){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>i=instance_create(x+(irandom(10)*8),0,obj_snow_layer)
+            <string>//i=instance_create(x+(irandom(10)*8),0,obj_snow_layer)
 
-with(i)
-{
-move_contact_solid(270,-1);
-if place_meeting(x,y,obj_snow_layer){
-y-=8;
-}
-}
+//with(i)
+//{
+//move_contact_solid(270,-1);
+//if place_meeting(x,y,obj_snow_layer){
+//y-=8;
+//}
+//}
 </string>
           </argument>
         </arguments>

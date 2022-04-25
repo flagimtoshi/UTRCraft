@@ -20,7 +20,7 @@ ioo.counti=real(ini_read_string("Map","itemcount"+string(i),0))
 break;
 
 case obj_goldchest:
-ioo.slotnumber=0//real(ini_read_string("Map","slotnumber"+string(i),0))
+ioo.slotnumber=real(ini_read_string("Map","slotnumber"+string(i),0))
 ioo.selnumb=ioo.slotnumber;
 repeat(ioo.slotnumber){
 ioo.itemid[ioo.selnumb]=real(ini_read_string("Map","itemid"+string(ioo.selnumb)+string(i),0))

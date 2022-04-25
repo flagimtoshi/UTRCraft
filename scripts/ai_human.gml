@@ -1,4 +1,4 @@
-
+show_world_around_entity(16, sprite_index);
 if ai !=0{
 if (datarget.x-x) < 0{if distance_to_object(datarget)>17{
 if !(place_meeting(x-sped,y,obj_solid)or place_meeting(x-sped,y,obj_barrier)) x -= sped;//move=1;
@@ -77,7 +77,6 @@ dirofv = 1;
 }
 }
 //render_ent(10);
-show_world_around_entity(16, sprite_index);
 /*if (datarget.x-x) < 0{if distance_to_object(obj_player)>17{
 if !(place_meeting(x-sped,y,obj_solid)or place_meeting(x-sped,y,obj_barrier)) x -= sped;//move=1;
 }

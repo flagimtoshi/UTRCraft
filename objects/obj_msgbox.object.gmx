@@ -111,7 +111,7 @@ message_length = string_length(message[message_current]); //get the number of ch
             <kind>1</kind>
             <string>
 if (characters &lt; message_length) { //if current character count is less than the amount in current message* 
-    hold = keyboard_check(vk_enter); //hold is true or false if we hold 'Z' or not
+    hold = (keyboard_check(vk_enter) or keyboard_check(global.interact)); //hold is true or false if we hold 'Z' or not
     characters += increase * (1 + hold); //increase speed based on hold
     
     
@@ -141,7 +141,7 @@ ply=ply_max
         }
     }
 }
-foward=keyboard_check_pressed(vk_enter)
+foward=(keyboard_check_pressed(vk_enter) or keyboard_check_pressed(global.interact))
 </string>
           </argument>
         </arguments>

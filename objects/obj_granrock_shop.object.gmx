@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>1</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_map_saves</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -111,7 +111,7 @@ image_yscale=0.5
             <kind>1</kind>
             <string>close=(distance_to_object(obj_player)&lt;4);
 
-if close and keyboard_check_pressed(ord("E")){
+if close and keyboard_check_pressed(global.interact){
 if !pause=1{
 if ! instance_exists(obj_pause_screen){
 instance_create(x,y,obj_pause_screen)

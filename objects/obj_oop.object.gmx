@@ -29,6 +29,8 @@
 link ="https://dl.dropbox.com/s/gg46v6ybonueaai/bannerboard.png";
 alarm[6]=1;
 
+spw=sprite_width
+sph=sprite_height
 </string>
           </argument>
         </arguments>
@@ -116,7 +118,7 @@ if ds_map_find_value(async_load, "id") == OnlineBoard
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_9slice((x-sprite_width/2)-30,(y-sprite_height/2)-30,sprite_width+30+30,sprite_height+30+30,spr_button_new,0)
+            <string>draw_9slice((x-spw/2)-30,(y-sph/2)-30,spw+30+30,sph+30+30,spr_button_new,0)
 if Online="Yes"{
 draw_sprite_ext(sprite_index,image_index,x,y,640/(sprite_width),480/(sprite_height),0,image_blend,image_alpha);
 }

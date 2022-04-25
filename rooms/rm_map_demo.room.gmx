@@ -420,7 +420,7 @@
     <instance objName="obj_hard_block" x="736" y="568" name="inst_AFE33336" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hard_block" x="704" y="560" name="inst_11078CBC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_barrier" x="520" y="-16" name="inst_8716854F" locked="0" code="" scaleX="1" scaleY="85" colour="4294967295" rotation="0"/>
-    <instance objName="obj_barrier" x="1992" y="-48" name="inst_3298CB57" locked="0" code="" scaleX="1" scaleY="90" colour="4294967295" rotation="0"/>
+    <instance objName="obj_barrier" x="1528" y="-32" name="inst_3298CB57" locked="0" code="" scaleX="1" scaleY="90" colour="4294967295" rotation="0"/>
     <instance objName="obj_woods_bg" x="264" y="-368" name="inst_685315F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stars" x="1192" y="-1984" name="inst_C7B02331" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stone" x="680" y="160" name="inst_CAE7CE42" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -2577,18 +2577,26 @@
     <instance objName="obj_trigger_slide" x="840" y="128" name="inst_00828334" locked="0" code="" scaleX="1.75" scaleY="0.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_sprint" x="952" y="136" name="inst_9ADB0B48" locked="0" code="" scaleX="1.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_good_job" x="1064" y="120" name="inst_CCB235E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_trigger_good_job" x="1168" y="32" name="inst_3C4042DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trigger_good_job" x="1168" y="32" name="inst_3C4042DD" locked="0" code="" scaleX="0.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_good_job" x="904" y="128" name="inst_DF22F438" locked="0" code="" scaleX="1.5" scaleY="0.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_stone" x="1040" y="152" name="inst_BDB568C1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_ladder" x="1120" y="120" name="inst_D88615C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_baseref_iron" x="896" y="144" name="inst_6A847449" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dummy" x="1240" y="55" name="inst_ACD9C931" locked="0" code="" scaleX="0.75" scaleY="0.75" colour="4294967295" rotation="0"/>
-    <instance objName="obj_board1" x="944" y="104" name="inst_B30965C7" locked="0" code="link=&quot;https://dl.dropbox.com/s/x6i4p22674brd6l/board.png&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_board1" x="1048" y="104" name="inst_D9B5E8FA" locked="0" code="link=&quot;https://dl.dropbox.com/s/opd18rzf3r4c2c8/board2.png&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dummy" x="1288" y="56" name="inst_ACD9C931" locked="0" code="" scaleX="0.75" scaleY="0.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_guide" x="816" y="120" name="inst_B7F12B56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_inventory" x="176" y="440" name="inst_CD8F05FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_attak_button" x="184" y="440" name="inst_F6B361B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_granrock_shop" x="1288" y="64" name="inst_6CE4E76A" locked="0" code="" scaleX="-0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_granrock_shop" x="1400" y="64" name="inst_6CE4E76A" locked="0" code="" scaleX="-0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trigger_dummy" x="1208" y="32" name="inst_5EFAA084" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_teleporter_in" x="1480" y="152" name="inst_6D65CCAD" locked="0" code="" scaleX="36" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trigger_crafting" x="1312" y="32" name="inst_AB94B62A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trigger_get_sticks" x="1384" y="32" name="inst_6E55223E" locked="0" code="" scaleX="0.75" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_workbench" x="1432" y="56" name="inst_7BDCCFC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trigger_break" x="1416" y="32" name="inst_B20DDF50" locked="0" code="" scaleX="1.875" scaleY="3.88000011444092" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trigger_break" x="1432" y="32" name="inst_63EAA1AA" locked="0" code="" scaleX="1" scaleY="0.875" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trigger_break" x="1441" y="32" name="inst_EB417284" locked="0" code="" scaleX="1.85714280605316" scaleY="3.75" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trigger_break" x="1416" y="8" name="inst_FFA38D54" locked="0" code="" scaleX="5" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_demo_portal" x="1512" y="40" name="inst_114B571A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

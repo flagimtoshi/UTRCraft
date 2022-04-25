@@ -28,7 +28,8 @@
             <string>if os_type=os_windows{
    schedul=scheduler_resolution_set(1)
    if schedul = 1{
-      show_message(scr_random_out_file("errorbloopers.txt")+": resolution out of range!")
+      error_msg=scr_random_out_file("errorbloopers.txt")+": resolution out of range!"
+      show_message(error_msg + "# please restart the game!");
    }
 }
 </string>

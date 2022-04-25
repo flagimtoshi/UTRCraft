@@ -338,3 +338,19 @@ ini_write_real("Player","Colour"+Username,/*obj_player.*/playercolour)
 ini_write_real("Player","Dir"+Username,obj_player.dirofv)
 ini_write_real("Player","Hand"+Username,obj_hand.image_angle);
 ini_close();
+#define scr_save_binds
+///scr_load_binds( key_string, key );
+
+ini_open("binds.ini");
+var key_ = argument1;
+
+if is_string(key_){
+key_=ord(key_)
+}
+//if ! ini_key_exists("Binds","Key_"+argument0){
+ini_write_real("Binds","Key_"+argument0,key_);
+//}
+//return ini_read_real("Binds","Key_"+argument0,key_);
+
+
+ini_close();

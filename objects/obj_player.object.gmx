@@ -66,12 +66,19 @@ if gamepad_is_connected(0){
 relx=0
 rely=0
 
-sprint = (keyboard_check(vk_shift));
-left = (keyboard_check(ord("A")));
-right = (keyboard_check(ord("D")));
-down = (keyboard_check(ord("S")));
-jump = (keyboard_check(vk_space) or keyboard_check(ord("W")));
-slide = (keyboard_check(vk_control));
+        sprint = (keyboard_check(global.sprint));
+        left = (keyboard_check(global.left_move));
+        right = (keyboard_check(global.right_move));
+        down = (keyboard_check(global.down_move));
+        jump = (keyboard_check(global.jump) or keyboard_check(global.up_move));
+        slide = (keyboard_check(global.crouch));
+
+//sprint = (keyboard_check(vk_shift));
+//left = (keyboard_check(ord("A")));
+//right = (keyboard_check(ord("D")));
+//down = (keyboard_check(ord("S")));
+//jump = (keyboard_check(vk_space) or keyboard_check(ord("W")));
+//slide = (keyboard_check(vk_control));
 
 </string>
           </argument>
@@ -590,8 +597,8 @@ view_yview+=random_range(-4, 4) //set's the view to a random y position
 }
 
 
-
-iae=vspeed*7*(dirofv*-1)
+var ampl_tail=2
+iae=lerp(vspeed*(7*ampl_tail)*(dirofv*-1),iae,0.7)
 
 if stoprender=0{
 

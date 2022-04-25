@@ -62,7 +62,7 @@ case 3:
 break;
 case 4:
      strucblock=instance_create(x,y-8,obj_structure_block);
-     strucblock.filename="granrockvillage";
+     strucblock.filename="tree\regular\tree";
 break;
 default:
         strucblock=instance_create(x,y-8,obj_structure_block);

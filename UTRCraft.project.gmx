@@ -3,7 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="36" name="datafiles">
+  <datafiles number="41" name="datafiles">
     <datafile>
       <name>logo.png</name>
       <exists>-1</exists>
@@ -38,7 +38,7 @@
       </ConfigOptions>
       <filename>ProcessBlacklist.dll</filename>
     </datafile>
-    <datafiles number="36" name="lang">
+    <datafiles number="41" name="lang">
       <datafile>
         <name>lang.ini</name>
         <exists>-1</exists>
@@ -57,7 +57,7 @@
         <filename>lang.ini</filename>
       </datafile>
     </datafiles>
-    <datafiles number="36" name="structures">
+    <datafiles number="41" name="structures">
       <datafile>
         <name>test.struct</name>
         <exists>-1</exists>
@@ -75,8 +75,8 @@
         </ConfigOptions>
         <filename>test.struct</filename>
       </datafile>
-      <datafiles number="36" name="tree">
-        <datafiles number="36" name="regular">
+      <datafiles number="41" name="tree">
+        <datafiles number="41" name="regular">
           <datafile>
             <name>gianttree.struct</name>
             <exists>-1</exists>
@@ -147,8 +147,8 @@
           </datafile>
         </datafiles>
       </datafiles>
-      <datafiles number="36" name="Space">
-        <datafiles number="36" name="random">
+      <datafiles number="41" name="Space">
+        <datafiles number="41" name="random">
           <datafile>
             <name>Meteor1.struct</name>
             <exists>-1</exists>
@@ -253,8 +253,8 @@
           <filename>MeteorCore.struct</filename>
         </datafile>
       </datafiles>
-      <datafiles number="36" name="granrock">
-        <datafiles number="36" name="village">
+      <datafiles number="41" name="granrock">
+        <datafiles number="41" name="village">
           <datafile>
             <name>lamp.struct</name>
             <exists>-1</exists>
@@ -272,9 +272,94 @@
             </ConfigOptions>
             <filename>lamp.struct</filename>
           </datafile>
+          <datafile>
+            <name>house0.struct</name>
+            <exists>-1</exists>
+            <size>2229</size>
+            <exportAction>2</exportAction>
+            <exportDir></exportDir>
+            <overwrite>0</overwrite>
+            <freeData>-1</freeData>
+            <removeEnd>0</removeEnd>
+            <store>0</store>
+            <ConfigOptions>
+              <Config name="Default">
+                <CopyToMask>9223372036854775807</CopyToMask>
+              </Config>
+            </ConfigOptions>
+            <filename>house0.struct</filename>
+          </datafile>
+          <datafile>
+            <name>house1.struct</name>
+            <exists>-1</exists>
+            <size>2229</size>
+            <exportAction>2</exportAction>
+            <exportDir></exportDir>
+            <overwrite>0</overwrite>
+            <freeData>-1</freeData>
+            <removeEnd>0</removeEnd>
+            <store>0</store>
+            <ConfigOptions>
+              <Config name="Default">
+                <CopyToMask>9223372036854775807</CopyToMask>
+              </Config>
+            </ConfigOptions>
+            <filename>house1.struct</filename>
+          </datafile>
+          <datafile>
+            <name>house2.struct</name>
+            <exists>-1</exists>
+            <size>2229</size>
+            <exportAction>2</exportAction>
+            <exportDir></exportDir>
+            <overwrite>0</overwrite>
+            <freeData>-1</freeData>
+            <removeEnd>0</removeEnd>
+            <store>0</store>
+            <ConfigOptions>
+              <Config name="Default">
+                <CopyToMask>9223372036854775807</CopyToMask>
+              </Config>
+            </ConfigOptions>
+            <filename>house2.struct</filename>
+          </datafile>
+          <datafile>
+            <name>house3.struct</name>
+            <exists>-1</exists>
+            <size>2229</size>
+            <exportAction>2</exportAction>
+            <exportDir></exportDir>
+            <overwrite>0</overwrite>
+            <freeData>-1</freeData>
+            <removeEnd>0</removeEnd>
+            <store>0</store>
+            <ConfigOptions>
+              <Config name="Default">
+                <CopyToMask>9223372036854775807</CopyToMask>
+              </Config>
+            </ConfigOptions>
+            <filename>house3.struct</filename>
+          </datafile>
+          <datafile>
+            <name>granrockvillage.struct</name>
+            <exists>-1</exists>
+            <size>1039</size>
+            <exportAction>2</exportAction>
+            <exportDir></exportDir>
+            <overwrite>0</overwrite>
+            <freeData>-1</freeData>
+            <removeEnd>0</removeEnd>
+            <store>0</store>
+            <ConfigOptions>
+              <Config name="Default">
+                <CopyToMask>9223372036854775807</CopyToMask>
+              </Config>
+            </ConfigOptions>
+            <filename>granrockvillage.struct</filename>
+          </datafile>
         </datafiles>
       </datafiles>
-      <datafiles number="36" name="underground">
+      <datafiles number="41" name="underground">
         <datafile>
           <name>granrockdungeon.struct</name>
           <exists>-1</exists>
@@ -294,7 +379,7 @@
         </datafile>
       </datafiles>
     </datafiles>
-    <datafiles number="36" name="voicelines">
+    <datafiles number="41" name="voicelines">
       <datafile>
         <name>combat.ogg</name>
         <exists>-1</exists>
@@ -381,7 +466,7 @@
         <filename>sprint.ogg</filename>
       </datafile>
     </datafiles>
-    <datafiles number="36" name="Discord">
+    <datafiles number="41" name="Discord">
       <datafile>
         <name>discord_rich_presence.dll</name>
         <exists>0</exists>
@@ -451,8 +536,8 @@
       </ConfigOptions>
       <filename>splashes.txt</filename>
     </datafile>
-    <datafiles number="36" name="sounds">
-      <datafiles number="36" name="door">
+    <datafiles number="41" name="sounds">
+      <datafiles number="41" name="door">
         <datafile>
           <name>door_close.ogg</name>
           <exists>-1</exists>
@@ -522,6 +607,7 @@
     <sound>sound\snd_good_job</sound>
     <sound>sound\snd_custom</sound>
     <sound>sound\snd_claudia</sound>
+    <sound>sound\snd_granrock</sound>
     <sound>sound\snd_coin</sound>
     <sound>sound\snd_whisper</sound>
     <sound>sound\snd_text</sound>
@@ -733,12 +819,14 @@
       <sprite>sprites\spr_slider_stick</sprite>
       <sprite>sprites\spr_slider_thing</sprite>
       <sprite>sprites\sprite287</sprite>
+      <sprite>sprites\spr_button_binds</sprite>
       <sprite>sprites\spr_loading_pinwheel</sprite>
       <sprites name="web">
         <sprite>sprites\spr_fav_gj</sprite>
         <sprite>sprites\spr_discord</sprite>
         <sprite>sprites\spr_mail</sprite>
         <sprite>sprites\spr_kofi</sprite>
+        <sprite>sprites\spr_icon_flagimtoshi</sprite>
         <sprite>sprites\spr_noti</sprite>
         <sprite>sprites\spr_web_arrow</sprite>
       </sprites>
@@ -826,6 +914,7 @@
       <sprite>sprites\spr_fallen_probe</sprite>
       <sprite>sprites\spr_fallen_probe_sel</sprite>
       <sprite>sprites\spr_granrock_shop</sprite>
+      <sprite>sprites\spr_demo_portal</sprite>
     </sprites>
     <sprites name="fonts">
       <sprite>sprites\spr_pixlels</sprite>
@@ -858,6 +947,7 @@
     <sprite>sprites\spr_hand_chroma</sprite>
     <sprites name="charakter pbs">
       <sprite>sprites\spr_claudia</sprite>
+      <sprite>sprites\spr_granrock_shopkeep</sprite>
       <sprite>sprites\spr_merchant</sprite>
       <sprite>sprites\spr_guidebot</sprite>
       <sprite>sprites\spr_msgbox</sprite>
@@ -937,6 +1027,7 @@
     <sprite>sprites\icon_camera</sprite>
     <sprite>sprites\icon_scheduler</sprite>
     <sprite>sprites\icon_options</sprite>
+    <sprite>sprites\icon_download_man</sprite>
     <sprite>sprites\icon_gamepad</sprite>
     <sprite>sprites\icon_trashbin</sprite>
     <sprite>sprites\icon_open</sprite>
@@ -1049,6 +1140,7 @@
     <scripts name="AI">
       <script>scripts\ai_human.gml</script>
       <script>scripts\scr_draw_item_npc_hand.gml</script>
+      <script>scripts\scr_ai_door_interaction.gml</script>
     </scripts>
     <script>scripts\scr_item_command_give.gml</script>
     <scripts name="Liquide">
@@ -1103,6 +1195,9 @@
     <script>scripts\check_mplay.gml</script>
     <script>scripts\scr_sine.gml</script>
     <script>scripts\create_playerlist.gml</script>
+    <script>scripts\script96.gml</script>
+    <script>scripts\rect_meet.gml</script>
+    <script>scripts\get_keyname.gml</script>
     <script>scripts\structure_build.gml</script>
   </scripts>
   <fonts name="fonts">
@@ -1138,6 +1233,7 @@
       <object>objects\obj_frank</object>
       <object>objects\obj_mailbox_controller</object>
       <object>objects\obj_display_manager</object>
+      <object>objects\obj_download_manager</object>
       <object>objects\obj_music_controller</object>
     </objects>
     <object>objects\obj_player</object>
@@ -1156,6 +1252,7 @@
       <object>objects\obj_talk_merchant</object>
       <object>objects\obj_talk_guidebot</object>
       <object>objects\obj_talk_claudia</object>
+      <object>objects\obj_talk_granrock_shopkeep</object>
     </objects>
     <objects name="Blocks">
       <object>objects\block_controll</object>
@@ -1367,8 +1464,17 @@
         <object>objects\obj_trigger_slide</object>
         <object>objects\obj_trigger_sprint</object>
         <object>objects\obj_trigger_ladder</object>
+        <object>objects\obj_trigger_dummy</object>
+        <object>objects\obj_trigger_dummy_kill</object>
+        <object>objects\obj_trigger_crafting</object>
+        <object>objects\obj_trigger_craft_complete</object>
         <object>objects\obj_trigger_custom</object>
       </objects>
+      <objects name="granrock shopkeep">
+        <object>objects\obj_trigger_get_sticks</object>
+      </objects>
+      <object>objects\obj_trigger_break</object>
+      <object>objects\obj_demo_portal</object>
     </objects>
     <objects name="GUI">
       <objects name="World">
@@ -1455,6 +1561,7 @@
           <object>objects\Button_web_discord</object>
           <object>objects\Button_web_GameJolt</object>
           <object>objects\Button_web_mail</object>
+          <object>objects\Button_Flagimtoshi</object>
           <object>objects\obj_web_sidebar</object>
         </objects>
         <object>objects\Button_Creds</object>
@@ -1485,6 +1592,7 @@
         </objects>
         <object>objects\obj_loading_screen</object>
         <objects name="options">
+          <object>objects\Button_switch_Options_screen1</object>
           <object>objects\Button_shader_toggle</object>
           <object>objects\Button_restart</object>
           <object>objects\Button_minecraft_skin_toggle</object>
@@ -1494,6 +1602,7 @@
           <object>objects\Button_GJChat_toggle</object>
           <object>objects\Button_connectBlocks_toggle</object>
           <object>objects\obj_all_opts</object>
+          <object>objects\obj_keybinds</object>
         </objects>
         <objects name="Title">
           <object>objects\obj_Online</object>
@@ -1610,6 +1719,7 @@
       <object>objects\obj_cave_des</object>
       <objects name="granrocks">
         <object>objects\obj_granrock_housing</object>
+        <object>objects\obj_granrock_village</object>
       </objects>
     </objects>
     <objects name="inv">
@@ -1705,6 +1815,7 @@
       <room>rooms\rm_worldsaves</room>
       <room>rooms\rm_LEGACY_world_creation</room>
       <room>rooms\rm_options</room>
+      <room>rooms\room27</room>
       <room>rooms\rm_modding_tools</room>
       <room>rooms\rm_news</room>
     </rooms>

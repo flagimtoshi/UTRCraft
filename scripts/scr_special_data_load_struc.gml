@@ -2,10 +2,10 @@
 ioo=argument0;
 i=argument1;
 
-switch(BlockSave[ioo]){
+switch(ioo){//(BlockSave[ioo]){
 
 case obj_custom_block:
-//ioo.OTL=ini_read_string("Map","LinkToImage"+string(i),"");
+ioo.OTL=ini_read_string("Map","LinkToImage"+string(i),"");
 break;
 
 case obj_claudia:
@@ -27,10 +27,13 @@ ioo.itemid[ioo.selnumb]=real(ini_read_string("Map","itemid"+string(ioo.selnumb)+
 ioo.counti[ioo.selnumb]=real(ini_read_string("Map","itemcount"+string(ioo.selnumb)+string(i),0))
 ioo.selnumb-=1;
 }
-ioo.selnumb=1;
+ioo.selnumb=1//real(ini_read_string("Map","selnumb"+string(i),0));
 break;
 
 case obj_boat:
 ioo.motors=real(ini_read_string("Map","motor"+string(i),0))
+break;
+
+default:
 break;
 }

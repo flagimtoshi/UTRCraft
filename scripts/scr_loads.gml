@@ -148,7 +148,7 @@ Username=ini_read_string("User","Username","");
 ini_close();
 }
 #define scr_load_opts
-if file_exists("Opts.ini"){
+//if file_exists("Opts.ini"){
 ini_open("Opts.ini");
 shader=ini_read_real("Opt","Shaders",1);
 MinecraftSkin=ini_read_real("Opt","MinecraftSkin",0);
@@ -157,6 +157,8 @@ NameShow=ini_read_real("Opt","NameShow",0);
 ClassicUI=ini_read_real("Opt","ClassicTitlescreen",0);
 connectBlocks=ini_read_real("Opt","ConnectBlocks",1);
 GJChat=ini_read_real("Opt","GameJoltChat",1);
+globalvar musiclink;
+//musiclink="https://flagimtoshi.github.io/utrcraft/music/music.zip";
 musiclink=ini_read_string("Opt","MusicLink","https://flagimtoshi.github.io/utrcraft/music/music.zip")
 if os_type!=os_android{
 scale_mult=ini_read_real("Opt","Scale",0.75);
@@ -176,7 +178,7 @@ scr_message("Error:KeysChanged! Reseting Profile!",75);
 scr_save_credit();
 }
 ini_close();
-}
+//}
 
 #define scr_load_stms
 if file_exists("Profile.ini"){
@@ -383,5 +385,21 @@ head=ini_read_real("Player","Head"+self.Username,0)
 body=ini_read_real("Player","Body"+self.Username,0)
 handanglee=ini_read_real("Player","Hand"+self.Username,0)
 pcolour=ini_read_real("Player","Colour"+self.Username,c_blue);
+
+ini_close();
+#define scr_load_binds
+///scr_load_binds( key_string, default );
+
+ini_open("binds.ini");
+var key_ = argument1;
+
+if is_string(key_){
+key_=ord(key_)
+}
+if ! ini_key_exists("Binds","Key_"+argument0){
+ini_write_real("Binds","Key_"+argument0,key_);
+}
+return ini_read_real("Binds","Key_"+argument0,key_);
+
 
 ini_close();

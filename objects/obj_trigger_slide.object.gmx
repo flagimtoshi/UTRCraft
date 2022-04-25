@@ -35,11 +35,22 @@ with(msgbp){
             
     message_end = 1;
 
+    
+    if os_type=os_windows{
     mood[0]=0;
     message[0] = get_string_ini("Dialogue","Guidebot_Slide0");
     
     mood[1]=0;
     message[1] = get_string_ini("Dialogue","Guidebot_Slide1");
+    }else{
+    mood[0]=0;
+    message[0] = get_string_ini("Dialogue","Guidebot_Slide0_Mobile");
+    
+    mood[1]=0;
+    message[1] = get_string_ini("Dialogue","Guidebot_Slide1_Mobile");
+    }
+    
+    
     
     
 timed=1;

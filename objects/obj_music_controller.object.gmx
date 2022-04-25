@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>
+
 file = file_find_first('music\*.ogg', fa_directory );
 musicindex=0;
 music[musicindex]="";
@@ -45,12 +46,16 @@ while (file != '')
     //show_debug_message("!    Success '"+ file +"' to the Music List!");
 }
 
+//musiclink="https://flagimtoshi.github.io/utrcraft/music/music.zip"
+
+
 downloading=0
 if musicindex=0{
 downtxt="Downloading Music..."
 downloading=1
 MusicZip=http_get_file(musiclink,"music.zip")
 }
+text="Loading..."
 progress=0
 //alarm[0]=irandom_range(room_speed*(60*2),room_speed*(60*10))
 current_tack=music[0]
@@ -99,6 +104,31 @@ while (mfile != '')
 menuindexy=0
 menuplaying=0
 
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// update Music
+
+
+verfile_online=http_get("https://flagimtoshi.github.io/utrcraft/music/music.txt")
 
 </string>
           </argument>
@@ -258,11 +288,62 @@ if ds_map_find_value(async_load, "id") == MusicZip
         
         }
     }else{
-    downtxt="Downloading Music..."+ string(ds_map_find_value(async_load, "sizeDownloaded")/ds_map_find_value(async_load, "contentLength")*100)+"%"
+    text=downtxt+" "+ string(ds_map_find_value(async_load, "sizeDownloaded")/ds_map_find_value(async_load, "contentLength")*100)+"%"
     progress=ds_map_find_value(async_load, "sizeDownloaded")/ds_map_find_value(async_load, "contentLength")
     }
 }
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// music updater
+if ds_map_find_value(async_load, "id") == verfile_online
+   {
+   if ds_map_find_value(async_load, "status") == 0
+      {
+      musicver__ = ds_map_find_value(async_load, "result");
+      if file_exists("music\ver.txt"){
+      file_ver=file_text_open_read("music\ver.txt");
+      musicver=file_text_read_string(file_ver);
+      file_text_close(file_ver);
+      }else{
+      musicver="0"
+      }
+      //show_message(string(musicver)+"!="+string(musicver__))
+      // show_message(string(real(musicver__)-real(musicver)))
+         if musicver!="0"{
+      
+      
+            if string_count(musicver,musicver__)!=1{
+            MusicZip=http_get_file(musiclink,"music.zip")
+            downtxt="Updating Music..."
+            downloading=true
+            show_message("Update Latest")
+            //if musicver=0{
+            //show_message(string(musicver)+"!="+string(musicver__))
+            //}
+            }
+         
+         }
+      }
+   }//*/
 </string>
           </argument>
         </arguments>
@@ -288,7 +369,7 @@ if ds_map_find_value(async_load, "id") == MusicZip
             <string>if downloading{
 if instance_exists(obj_logo_intro){
 obj_logo_intro.Progress=clamp(obj_logo_intro.Progress,0,progress);
-}
+
 draw_set_colour(c_white)
 draw_set_halign(fa_center)
 draw_set_valign(fa_middle)
@@ -298,9 +379,10 @@ draw_set_font(fnt_pixels)
 //}else{
 //downtxt="Downloading Music..."
 //}
-draw_text_transformed(obj_logo_intro.x,obj_logo_intro.y+320,downtxt,4,4,0)
+draw_text_transformed(obj_logo_intro.x,obj_logo_intro.y+332,text,4,4,0)
 draw_set_halign(fa_left)
 draw_set_valign(fa_top)
+}
 }
 </string>
           </argument>

@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hp=69;
+            <string>stick_quest=0;
+
+hp=69;
 shield=0;
 dirofv=0;
 pitch=0;
@@ -113,6 +115,47 @@ file="Internal Asset"
       </action>
     </event>
     <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///check for quest (tutorial)
+
+//if room=rm_map_demo{
+if stick_quest=0{
+
+if instance_exists(obj_item){
+//if instance_number(obj_item) &gt; 0{
+//show_message("CUM")
+item_=instance_nearest(x,y,obj_item)
+
+if item_.index=22{
+
+show_debug_message("ITEM CHECK COMPLETE!")
+instance_create(obj_player.x,obj_player.y,obj_trigger_craft_complete);
+stick_quest=1;
+}
+
+
+}
+}
+//}
+</string>
+          </argument>
+        </arguments>
+      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -236,7 +279,7 @@ if pitc &gt; pitch { pitch+=2 }
           <argument>
             <kind>1</kind>
             <string>///mouth movement
-if audio_is_playing(jij){
+if (audio_is_playing(jij) or audio_is_playing(snd_text)){
 igi+=0.5
 show_debug_message("playing")
 if igi = 12{

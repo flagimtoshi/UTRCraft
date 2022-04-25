@@ -9,7 +9,7 @@
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
   <bbox_right>11</bbox_right>
-  <bbox_top>9</bbox_top>
+  <bbox_top>11</bbox_top>
   <bbox_bottom>23</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
@@ -28,6 +28,5 @@
     <frame index="5">images\spr_pants_5.png</frame>
     <frame index="6">images\spr_pants_6.png</frame>
     <frame index="7">images\spr_pants_7.png</frame>
-    <frame index="8">images\spr_pants_8.png</frame>
   </frames>
 </sprite>

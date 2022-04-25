@@ -264,6 +264,7 @@ room_goto(room1)
 
 
 scr_save_stms();
+Accessoires=1
 </string>
           </argument>
         </arguments>

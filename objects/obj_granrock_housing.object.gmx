@@ -2,7 +2,7 @@
 <object>
   <spriteName>icon_granrock_housing</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>obj_map_saves</parentName>
@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>y-=128;
 move_contact_solid(270,1000);
+buildmode=true
 </string>
           </argument>
         </arguments>
@@ -49,10 +50,13 @@ move_contact_solid(270,1000);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if place_meeting(x,y+8,obj_solid){
-structure_build(x,y,"granrock\house"+string(irandom(3)));
+            <string>if buildmode=true{
+if place_meeting(x,y+8,obj_solid){
+structure_build(x,y,"granrock\village\house"+string(irandom(3)));
+buildmode=false
 }
-instance_destroy(self);
+}
+//instance_destroy(self);
 </string>
           </argument>
         </arguments>

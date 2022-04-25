@@ -76,7 +76,7 @@
     <instance objName="obj_credit" x="2166" y="882" name="inst_15EDED3A" locked="0" code="" scaleX="0.699999988079071" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Button_Tools" x="1536" y="640" name="inst_1E207E33" locked="0" code="" scaleX="0.699999988079071" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_skin_preview" x="2512" y="832" name="inst_67BC1868" locked="0" code="" scaleX="0.340000003576279" scaleY="0.340000003576279" colour="4294967295" rotation="0"/>
-    <instance objName="obj_web_sidebar" x="48" y="0" name="inst_9045E551" locked="0" code="" scaleX="58" scaleY="157" colour="4294967295" rotation="0"/>
+    <instance objName="obj_web_sidebar" x="48" y="0" name="inst_9045E551" locked="-1" code="" scaleX="58" scaleY="157" colour="4294967295" rotation="0"/>
     <instance objName="Button_web_discord" x="80" y="288" name="inst_B16488D6" locked="0" code="" scaleX="0.208000004291534" scaleY="0.833000004291534" colour="4294967295" rotation="0"/>
     <instance objName="Button_web_GameJolt" x="80" y="128" name="inst_DE7012C6" locked="0" code="" scaleX="0.209999993443489" scaleY="0.829999983310699" colour="4294967295" rotation="0"/>
     <instance objName="Button_web_mail" x="80" y="448" name="inst_CA0A91D8" locked="0" code="" scaleX="0.209999993443489" scaleY="0.829999983310699" colour="4294967295" rotation="0"/>
@@ -86,6 +86,7 @@
     <instance objName="obj_frank" x="336" y="112" name="inst_CEEE24E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Button_TestAds" x="1008" y="-208" name="inst_98B4FF56" locked="0" code="" scaleX="0.526666641235352" scaleY="1.0402684211731" colour="4294967295" rotation="0"/>
     <instance objName="obj_splashes" x="1248" y="304" name="inst_45F02670" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Button_Flagimtoshi" x="80" y="608" name="inst_130E4141" locked="0" code="" scaleX="0.209999993443489" scaleY="0.829999983310699" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="&lt;undefined&gt;" x="64" y="384" w="640" h="480" xo="0" yo="0" id="10000005" name="inst_F04F20C9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

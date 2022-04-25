@@ -162,7 +162,7 @@ instance_destroy();
             <kind>1</kind>
             <string>//draw_sprite(sprite_index,0,(view_wview/2)+offset/2,y+offset);
 draw_sprite_tiled_ext(sprite_index,0,(view_wview/2)+offset,(view_hview/2)+offset,1,1,image_blend,image_alpha);
-ligt_tiled_ext(0,(view_wview/2)+offset,(view_hview/2)+offset,1,1);
+ligt_tiled_ext(sprite_index,0,(view_wview/2)+offset,(view_hview/2)+offset,1,1,image_alpha);
 </string>
           </argument>
         </arguments>

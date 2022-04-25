@@ -36,7 +36,11 @@ with(msgbp){
     message_end = 0;
 
     mood[0]=0;
+    if os_type=os_windows{
     message[0] = get_string_ini("Dialogue","Guidebot_Jump");
+    }else{
+    message[0] = get_string_ini("Dialogue","Guidebot_Jump_Mobile");
+    }
     
     
 timed=1;

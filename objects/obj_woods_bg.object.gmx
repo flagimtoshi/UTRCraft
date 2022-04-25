@@ -74,6 +74,7 @@ io=0;
 repeat(number_of_clouds)
 {
 draw_sprite_ext(spr_cloud,io,(view_xview/1.2+164)+(cloudx_array[io]),((view_yview+view_hview/2)/1.7)+(cloudy_array[io]),0.5,0.5,0,image_blend,1);
+lightning_draw_segment(spr_cloud,io,(view_xview/1.2+164)+(cloudx_array[io]),((view_yview+view_hview/2)/1.7)+(cloudy_array[io]),0.5,0.5,0,c_black,1);
 if ((cloudx_array[io])&gt;(-64)){
 cloudx_array[io]-=cloudspeed;
 }else{

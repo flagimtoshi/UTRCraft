@@ -138,6 +138,7 @@ for(i=-88;i<room_width+88;i+=8){ // THIS WILL KEEP GENERATE THE WORLD UNTIL IT R
 //}
 worldGenEnd = true
 alarm[0]=10
+instance_create(irandom(room_width/8)*8,0,obj_granrock_village)
 
 give(obj_item_workbench)
 instance_activate_all();
