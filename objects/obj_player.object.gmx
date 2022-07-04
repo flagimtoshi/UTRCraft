@@ -484,9 +484,9 @@ HP-=speedquotient*2;
 
 }
 
-if keyboard_check(ord("U")){
-room_speed=900;
-}else{room_speed=30}
+//if keyboard_check(ord("U")){
+//room_speed=900;
+//}else{room_speed=30}
 
 if keyboard_check_pressed(ord("H")){
    view_hport=view_hport*2
@@ -560,7 +560,7 @@ HP=20;
             <kind>1</kind>
             <string>///new player stuffs (cleaner)
 
-speed=clamp(speed,-20,20);
+speed=clamp(speed,-20*delta,20*delta);
 </string>
           </argument>
         </arguments>
@@ -598,7 +598,7 @@ view_yview+=random_range(-4, 4) //set's the view to a random y position
 
 
 var ampl_tail=2
-iae=lerp(vspeed*(7*ampl_tail)*(dirofv*-1),iae,0.7)
+iae=lerp(vspeed*(7*ampl_tail)*(dirofv*-1)*delta,iae,0.7)
 
 if stoprender=0{
 
@@ -625,7 +625,7 @@ instance_activate_region(view_xview, view_yview, view_wview, view_hview, true);
 y=floor(y)
 //}
 if pause=0{
-gravti = 0.5
+gravti = 0.4*delta
 if! place_meeting(x,y+1,obj_solid)
 {
 gravity_direction = 270
@@ -634,11 +634,11 @@ if y&gt;SpaceOffset{
 gravity = gravti
 if place_meeting(x,y,obj_water){
 gravity_direction = 270
-gravity = 0.2
+gravity = 0.2*delta
 }
 }else{
-gravity = 0.1;
-cold+=0.05;
+gravity = 0.1*delta
+cold+=0.05*delta;
 }
 
 }
@@ -658,20 +658,20 @@ if keyboard_check(vk_space){
 if !place_meeting(x,y-sped,obj_solid) y -= sped;
 }*/
 if sprint=1{
-sped=2;
+sped=2*delta;
 }else{
-sped=1;
+sped=1*delta;
 }
 
 if !((image_angle=90) or (image_angle=-90)) and !slide{
 if left{ 
-if !(place_meeting(x-sped,y,obj_solid)or place_meeting(x-sped,y,obj_barrier)){ x -= sped;move=1;cambobb=-sped;}
+if !(place_meeting(x-sped,y,obj_solid)or place_meeting(x-sped,y,obj_barrier)){ x -= sped*delta;move=1;cambobb=-sped*delta;}
 }
 if down{
-if !(place_meeting(x,y+sped,obj_solid)or place_meeting(x,y+sped,obj_barrier)) y += sped;move=1;
+if !(place_meeting(x,y+sped,obj_solid)or place_meeting(x,y+sped,obj_barrier)) y += sped*delta;move=1;
 }
 if right{
-if !(place_meeting(x+sped,y,obj_solid)or place_meeting(x+sped,y,obj_barrier)){ x += sped;move=1;cambobb=sped;
+if !(place_meeting(x+sped,y,obj_solid)or place_meeting(x+sped,y,obj_barrier)){ x += sped*delta;move=1;cambobb=sped*delta;
 
     
 }
@@ -919,7 +919,7 @@ if pitch-pitc &gt; 0 { pitch-=1 }
 if debi=0{
 if jump and pause=0{
 if place_meeting(x,y+1,obj_solid) or place_meeting(x,y+2,obj_climable){
-move_towards_point(x+jumpangle,y-1,2.5)
+move_towards_point(x+jumpangle,y-1,2.5*delta)
 }
 }
 }
@@ -927,7 +927,7 @@ move_towards_point(x+jumpangle,y-1,2.5)
 if debi=0{
 if jump and pause=0{
 if place_meeting(x,y+1,obj_water){
-move_towards_point(x,y-1,2.5)
+move_towards_point(x,y-1,2.5*delta)
 }
 }
 }
@@ -1015,7 +1015,7 @@ instance_destroy(obj_pause_screen)
             <kind>1</kind>
             <string>///Mana regen
 
-Mana+=0.025
+Mana+=0.025*delta
 
 
 if Mana&gt;20{
@@ -1047,7 +1047,7 @@ Mana=20
 if y&gt;SpaceOffset{
 
 }else{
-cold+=0.01;
+cold+=0.01*delta;
 }
 
 
@@ -1057,9 +1057,9 @@ cold=19.9
 
 
 if cold&gt;18{
-HP-=0.05
+HP-=0.05*delta
 }
-cold-=0.0005
+cold-=0.0005*delta
 
 
 if cold&lt;0{

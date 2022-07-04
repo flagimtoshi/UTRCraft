@@ -53,6 +53,7 @@
   <instances>
     <instance objName="STARTUP" x="0" y="0" name="inst_7DBAFCAF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_logo_intro" x="960" y="512" name="inst_538178A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="cntr_delta" x="320" y="64" name="inst_06A957FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="contr_language" x="64" y="0" name="inst_4793D9E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="c_checker" x="128" y="0" name="inst_AED82577" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_FPS_shower" x="192" y="0" name="inst_2FCE33F0" locked="0" code="instance_destroy();&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

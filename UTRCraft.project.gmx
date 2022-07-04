@@ -1235,6 +1235,7 @@
       <object>objects\obj_display_manager</object>
       <object>objects\obj_download_manager</object>
       <object>objects\obj_music_controller</object>
+      <object>objects\cntr_delta</object>
     </objects>
     <object>objects\obj_player</object>
     <object>objects\obj_hand</object>
