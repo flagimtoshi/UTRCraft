@@ -102,10 +102,10 @@ scr_load_stms();
 globalvar emojicode;emojicode=232;
 globalvar fnt_pixels;fnt_pixels=font_add_sprite(spr_pixlels, 32, 1, 1);
 if file_exists("skin.png"){
-sprite_replace(spr_player_chroma,"skin.png",0,0,0,4,10)
+sprite_replace(spr_player_chroma,"skin.png",0,0,0,4,10);
 }
 if file_exists("hand.png"){
-sprite_replace(spr_hand_chroma,"hand.png",0,0,0,0,1)
+sprite_replace(spr_hand_chroma,"hand.png",0,0,0,0,1);
 }
 
 

@@ -2597,6 +2597,7 @@
     <instance objName="obj_trigger_break" x="1441" y="32" name="inst_EB417284" locked="0" code="" scaleX="1.85714280605316" scaleY="3.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_break" x="1416" y="8" name="inst_FFA38D54" locked="0" code="" scaleX="5" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_demo_portal" x="1512" y="40" name="inst_114B571A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_claudia" x="856" y="112" name="inst_67612DF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

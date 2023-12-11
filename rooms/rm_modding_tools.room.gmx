@@ -54,7 +54,7 @@
     <instance objName="Button_skins_back" x="224" y="128" name="inst_A93C5028" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Button_struct_editor" x="768" y="128" name="inst_6BF11B93" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Button_anim_editor" x="1472" y="128" name="inst_41A628D6" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="Button_GJ_Multiplayer" x="768" y="256" name="inst_74987337" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Button_GJ_Multiplayer" x="768" y="-96" name="inst_74987337" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="&lt;undefined&gt;" x="64" y="384" w="640" h="480" xo="0" yo="0" id="10000005" name="inst_F04F20C9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
